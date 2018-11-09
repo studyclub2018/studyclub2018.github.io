@@ -9,7 +9,7 @@ To encourage face-to-face interaction among ICS students
 
 # Team members:
 
-QiQing Luo
-Jiaying Feng
-Christopher Lau
+QiQing Luo;
+Jiaying Feng;
+Christopher Lau;
 Xue Gong (Kristi)
