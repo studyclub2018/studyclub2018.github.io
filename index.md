@@ -13,10 +13,7 @@ To encourage use of ICSpace among ICS students
 To minimize risk of inappropriate encounters by requiring all meetings to occur in ICSpace.
 To encourage face-to-face interaction among ICS students.
 
-
-
-
 # Milestone 1
 
-<img class="ui floated image" src="../images/landing_page.jpg">
+<img class="ui floated image" src="../image/landing_page.jpg">
 
