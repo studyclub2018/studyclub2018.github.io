@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c988e839-2655-437d-8947-8d3f83cfc64f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.github" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,6 +15,7 @@
     <session id="-1511071020">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -81,10 +79,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="27" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="710" />
+    <option name="height" value="713" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -116,6 +113,11 @@
             <path>
               <item name="studyclub2018.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="studyclub2018.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="studyclub2018.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="studyclub2018.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="studyclub2018.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -153,7 +155,7 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="27" y="23" width="1280" height="710" extended-state="1" />
+    <frame x="229" y="120" width="1280" height="710" extended-state="0" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Favorites" side_tool="true" />

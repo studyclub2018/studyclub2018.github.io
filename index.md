@@ -18,3 +18,5 @@ To encourage face-to-face interaction among ICS students.
 
 # Milestone 1
 
+<img class="ui floated image" src="../images/badExample.jpg">
+
