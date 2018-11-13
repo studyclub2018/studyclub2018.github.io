@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grid, Icon, Header, Button } from 'semantic-ui-react';
+import Footer from '../components/Footer';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
@@ -32,6 +33,7 @@ class Landing extends React.Component {
                 Pick Your Schedule. Pick Your favor Student. Fun and Rewarding. </Header>
             </Grid.Column>
           </Grid>
+        <Footer/>
         </div>
     );
   }
