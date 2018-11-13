@@ -10,11 +10,12 @@ import { Roles } from 'meteor/alanning:roles';
 class NavBar extends React.Component {
   render() {
     const menuStyle = { marginBottom: '10px', background: '#FDCFCF' };
+    const style2 = { marginTop: 0 };
     return (
       <Menu style={menuStyle} attached="top" borderless inverted>
         <Menu.Item as={NavLink} activeClassName="" exact to="/">
           <Menu.Item><Image size='mini' src="/images/study-club.png"/></Menu.Item>
-          <Header inverted as='h1'>Study Club</Header>
+          <Header inverted as='h1' style={style2}>Study Club</Header>
         </Menu.Item>
         {this.props.currentUser ? (
             [<Menu.Item as={NavLink} activeClassName="active" exact to="/add" key='add'>Add Stuff</Menu.Item>,

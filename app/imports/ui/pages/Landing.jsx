@@ -4,12 +4,13 @@ import { Grid, Icon, Header, Button } from 'semantic-ui-react';
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
   render() {
+    const menuStyle = { marginTop: 60 };
     return (
         <div className='background'>
           <Grid container stackable centered columns={2}>
 
             <Grid.Column textAlign='center'>
-              <Icon size='huge' name='student'/>
+              <Icon size='massive' name='student' style={menuStyle}/>
               <Header as='h1'>
                 <Button inverted color='black'>
                   Get a Tutor
@@ -21,7 +22,7 @@ class Landing extends React.Component {
             </Grid.Column>
 
             <Grid.Column textAlign='center'>
-              <Icon size='huge' name='jenkins'/>
+              <Icon size='massive' name='jenkins' style={menuStyle}/>
               <Header as='h1'>
                 <Button inverted color='black'>
                   Become a Tutor
