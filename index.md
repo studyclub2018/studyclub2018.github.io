@@ -20,24 +20,30 @@ To encourage face-to-face interaction among ICS students.
 
 <img class="ui floated image" src="../image/LandingPage#1.png">
 
-The landing page provides users a guide to sign up their accounts. Users have options to choose to be tutor or tutee.
+
+**The landing page provides users a guide to sign up their accounts. Users have options to choose to be tutor or tutee.**
 
 <img class="ui floated image" src="../image/UserPage.png">
 
-The user page allows uers to add study sessions or to edit their study sessions.
+
+**The user page allows uers to add study sessions or to edit their study sessions.**
+
 
 <img class="ui floated image" src="../image/AddStudySession.png">
 
-The add study session page allows tutee to choose the tutor and the date they want to meet.
+
+**The add study session page allows tutee to choose the tutor and the date they want to meet.**
 
 
 <img class="ui floated image" src="../image/Admin#1.png">
 
-The admin page allows admin to edit the study session or delete study session.
+
+**The admin page allows admin to edit the study session or delete study session.**
+
 
 <img class="ui floated image" src="../image/ListStudySession.png">
 
-The list study session page shows the list of the study session that been booked.
+**The list study session page shows the list of the study session that been booked.**
 
 
 
