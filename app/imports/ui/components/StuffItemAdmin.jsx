@@ -7,6 +7,7 @@ class StuffItemAdmin extends React.Component {
   render() {
     return (
         <Table.Row>
+          <Tabel.Cell>{this.props.stuff.tutee}</Tabel.Cell>
           <Table.Cell>{this.props.stuff.courseName}</Table.Cell>
           <Table.Cell>{this.props.stuff.month}</Table.Cell>
           <Table.Cell>{this.props.stuff.day}</Table.Cell>

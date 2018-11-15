@@ -36,6 +36,7 @@ class EditTutor extends React.Component {
             <Header as="h2" textAlign="center">Edit your tutoring session</Header>
             <AutoForm ref={(ref) => { this.formRef = ref; }} schema={StuffSchema} onSubmit={this.submit}>
               <Segment>
+                <TextField name='tutee'/>
                 <TextField name='courseName'/>
                 <Form>
                   <Form.Group widths='equal'>

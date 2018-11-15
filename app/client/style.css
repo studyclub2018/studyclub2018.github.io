@@ -1,13 +1,25 @@
 .background {
-  background: url('/images/background.jpg') no-repeat center center fixed;
+  background: url('/images/blue_skies.jpg') no-repeat center center;
   background-size: cover;
-  height: 450px;
+  height: 650px;
 }
 
 .footer-background {
-  background-color: #FDCFCF;
+  background-color: black;
   color: white;
-  margin-top: 80px;
+  margin-top: 200px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+#left-txt {
+  font-family: monospace;
+  font-size: 22px;
+  color: white;
+}
+
+#down-txt {
+  font-family: serif;
+  font-size: 25px;
+  color: white;
 }
