@@ -18,15 +18,15 @@ To encourage face-to-face interaction among ICS students.
 
 # Milestone 1
 
-<img class="ui floated image" src="../image/landing_page.jpg">
+<img class="ui floated image" src="../image/LandingPage#1.png">
 
-<img class="ui floated image" src="../image/user_home_page.jpg">
+<img class="ui floated image" src="../image/UserPage.png">
 
-<img class="ui floated image" src="../image/user_profile_page.jpg">
+<img class="ui floated image" src="../image/AddStudySession.png">
 
-<img class="ui floated image" src="../image/admin_home_page.jpg">
+<img class="ui floated image" src="../image/Admin#1.png">
 
-<img class="ui floated image" src="../image/calendar_page.jpg">
+<img class="ui floated image" src="../image/ListStudySession.png">
 
 
 

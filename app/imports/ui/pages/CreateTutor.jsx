@@ -36,7 +36,7 @@ class CreateTutor extends React.Component {
   submit(data) {
     const { tutee, courseName, month, day, time, tutor } = data;
     const owner = Meteor.user().username;
-    Stuffs.insert({ tutee,courseName, month, day, time, owner, tutor }, this.insertCallback);
+    Stuffs.insert({ tutee, courseName, month, day, time, owner, tutor }, this.insertCallback);
   }
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
@@ -51,9 +51,9 @@ class CreateTutor extends React.Component {
                 <TextField name='courseName'/>
                 <Form>
                   <Form.Group widths='equal'>
-                    <SelectField name='month' decimal={false}/>
-                    <SelectField name='day' decimal={false}/>
-                    <SelectField name='time' decimal={false}/>
+                    <SelectField name='month'/>
+                    <SelectField name='day'/>
+                    <SelectField name='time'/>
                   </Form.Group>
                 </Form>
                 <Form>

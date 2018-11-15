@@ -28,10 +28,13 @@ class ListStuffAdmin extends React.Component {
                 <Table.HeaderCell>Day</Table.HeaderCell>
                 <Table.HeaderCell>Time</Table.HeaderCell>
                 <Table.HeaderCell>Tutor</Table.HeaderCell>
+                <Table.HeaderCell>Style</Table.HeaderCell>
                 <Table.HeaderCell>Edit</Table.HeaderCell>
                 <Table.HeaderCell>Delete</Table.HeaderCell>
               </Table.Row>
             </Table.Header>
+            <Table.Body>{this.props.stuffs.map((stuff) => <StuffItem key={stuff._id} stuff={stuff} />)}
+            </Table.Body>
           </Table>
         </Container>
     );
