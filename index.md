@@ -18,7 +18,7 @@ To encourage face-to-face interaction among ICS students.
 
 # Milestone 1
 
-<img class="ui floated image" src="../image/LandingPage#1.png">
+<img class="ui floated image" src="../image/LandingPage.png">
 
 
 **The landing page provides users a guide to sign up their accounts. Users have options to choose to be tutor or tutee.**
@@ -35,7 +35,7 @@ To encourage face-to-face interaction among ICS students.
 **The add study session page allows tutee to choose the tutor and the date they want to meet.**
 
 
-<img class="ui floated image" src="../image/Admin#1.png">
+<img class="ui floated image" src="../image/AdminPage.png">
 
 
 **The admin page allows admin to edit the study session or delete study session.**
