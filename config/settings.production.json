@@ -21,7 +21,7 @@
   ],
   "galaxy.meteor.com": {
     "env": {
-      "MONGO_URL": "mongodb://jiayingfeng:Amandaf25##@ds151820.mlab.com:51820/appdb"
+      "MONGO_URL": "mongodb://qiqingl:EvvvvvE2580#@ds147167.mlab.com:47167/appdb"
     }
   }
 }
