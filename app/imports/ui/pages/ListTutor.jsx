@@ -27,6 +27,7 @@ class ListTutor extends React.Component {
                 <Table.HeaderCell>Day</Table.HeaderCell>
                 <Table.HeaderCell>Time</Table.HeaderCell>
                 <Table.HeaderCell>Tutor</Table.HeaderCell>
+                <Table.HeaderCell>Style</Table.HeaderCell>
                 <Table.HeaderCell>Edit</Table.HeaderCell>
               </Table.Row>
             </Table.Header>

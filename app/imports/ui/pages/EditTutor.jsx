@@ -4,7 +4,6 @@ import { Stuffs, StuffSchema } from '/imports/api/stuff/stuff';
 import { Bert } from 'meteor/themeteorchef:bert';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
-import NumField from 'uniforms-semantic/NumField';
 import SelectField from 'uniforms-semantic/SelectField';
 import SubmitField from 'uniforms-semantic/SubmitField';
 import HiddenField from 'uniforms-semantic/HiddenField';
@@ -18,10 +17,10 @@ class EditTutor extends React.Component {
 
   /** On successful submit, insert the data. */
   submit(data) {
-    const { courseName, month, day, time, tutor, _id } = data;
-    Stuffs.update(_id, { $set: { courseName, month, day, time, tutor } }, (error) => (error ?
-        Bert.alert({ type: 'danger', message: `Update failed: ${error.message}` }) :
-        Bert.alert({ type: 'success', message: 'Update succeeded' })));
+    const { courseName, month, day, time, tutor, style, _id } = data;
+    Stuffs.update(_id, { $set: { courseName, month, day, time, tutor, style } }, (error) => (error ?
+        Bert.alert({ type: 'danger', message: `Could not edit session: ${error.message}` }) :
+        Bert.alert({ type: 'success', message: 'Session updated!' })));
   }
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
@@ -34,18 +33,23 @@ class EditTutor extends React.Component {
     return (
         <Grid container centered>
           <Grid.Column>
-            <Header as="h2" textAlign="center">Edit your tutoring sessions</Header>
+            <Header as="h2" textAlign="center">Edit your tutoring session</Header>
             <AutoForm ref={(ref) => { this.formRef = ref; }} schema={StuffSchema} onSubmit={this.submit}>
               <Segment>
                 <TextField name='courseName'/>
                 <Form>
                   <Form.Group widths='equal'>
-                    <SelectField name='month' decimal={false}/>
-                    <SelectField name='day' decimal={false}/>
-                    <NumField name='time' decimal={false}/>
+                    <SelectField name='month'/>
+                    <SelectField name='day'/>
+                    <SelectField name='time'/>
                   </Form.Group>
                 </Form>
-                <SelectField name='tutor'/>
+                <Form>
+                  <Form.Group widths='equal'>
+                    <SelectField name='tutor'/>
+                    <SelectField name='style'/>
+                  </Form.Group>
+                </Form>
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
                 <HiddenField name='owner' value='fakeuser@foo.com'/>
