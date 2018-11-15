@@ -10,7 +10,7 @@ const StuffSchema = new SimpleSchema({
   courseName: String,
   month: {
     type: String,
-    allowedValues: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October','November', 'December'],
+    allowedValues: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
   },
   day: {
     type: Number,
