@@ -5,7 +5,8 @@
 * [Milestone 2](#about-studyclub2018)
 * [Milestone 3](#about-studyclub2018)
 
-Visit our app at: <a href='https://galaxy.meteor.com/app/studyclub2.meteorapp.com'>study club</a>
+
+Visit our app at: <a href='http://studyclub2.meteorapp.com/'>study club</a>
 
 
 # About StudyClub
