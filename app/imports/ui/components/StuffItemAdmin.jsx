@@ -7,9 +7,11 @@ class StuffItemAdmin extends React.Component {
   render() {
     return (
         <Table.Row>
-          <Table.Cell>{this.props.stuff.name}</Table.Cell>
-          <Table.Cell>{this.props.stuff.quantity}</Table.Cell>
-          <Table.Cell>{this.props.stuff.condition}</Table.Cell>
+          <Table.Cell>{this.props.stuff.courseName}</Table.Cell>
+          <Table.Cell>{this.props.stuff.month}</Table.Cell>
+          <Table.Cell>{this.props.stuff.day}</Table.Cell>
+          <Table.Cell>{this.props.stuff.time}</Table.Cell>
+          <Table.Cell>{this.props.stuff.tutor}</Table.Cell>
           <Table.Cell>{this.props.stuff.owner}</Table.Cell>
         </Table.Row>
     );
