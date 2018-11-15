@@ -22,7 +22,8 @@ const StuffSchema = new SimpleSchema({
   },
   time: {
     type: String,
-    allowedValues: ['-Select Time-', '10:00am', '10:30am', '11:00am', '11:30am', '12:00pm', '12:30pm' ],
+    allowedValues: ['-Select Time-', '9:00am', '9:30am', '10:00am',
+      '10:30am', '11:00am', '11:30am', '12:00pm', '12:30pm'],
 },
   owner: String,
   tutor: {
