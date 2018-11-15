@@ -1,6 +1,9 @@
 # Table of contents
 
 * [About Study Club](#about-studyclub2018)
+* [Milestone 1](#about-studyclub2018)
+* [Milestone 2](#about-studyclub2018)
+* [Milestone 3](#about-studyclub2018)
 
 # About StudyClub
 
