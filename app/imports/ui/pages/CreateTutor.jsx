@@ -35,9 +35,9 @@ class CreateTutor extends React.Component {
 
   /** On submit, insert the data. */
   submit(data) {
-    const { courseName, month, day, time, tutor } = data;
+    const { tutee, courseName, month, day, time, tutor } = data;
     const owner = Meteor.user().username;
-    Stuffs.insert({ courseName, month, day, time, owner, tutor }, this.insertCallback);
+    Stuffs.insert({ tutee,courseName, month, day, time, owner, tutor }, this.insertCallback);
   }
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
