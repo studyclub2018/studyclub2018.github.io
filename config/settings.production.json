@@ -1,0 +1,27 @@
+{
+  "defaultAccounts": [
+    { "email": "admin@foo.com", "password": "changeme", "role": "admin" },
+    { "email": "john@foo.com", "password": "changeme" },
+    { "email": "j@f.com", "password": "a", "role": "admin" }
+
+  ],
+
+  "originalDefaultData": [
+    { "name": "Basket", "quantity": 3, "owner": "john@foo.com", "condition": "excellent" },
+    { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
+    { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
+    { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+  ],
+
+  "defaultData": [
+    { "courseName": "ICS 321", "month": "April", "day": 4, "time": "6:45pm", "owner": "john@foo.com", "tutor": "jim" },
+    { "courseName": "ICS 999", "month": "July", "day": 12, "time": "7:00pm","owner": "john@foo.com", "tutor": "nein" },
+    { "courseName": "ICS 420", "month": "May", "day": 27, "time": "11:15am","owner": "john@foo.com", "tutor": "weedle" },
+    { "courseName": "ICS 690", "month": "August", "day": 20, "time": "9:35am","owner": "john@foo.com", "tutor": "don" }
+  ],
+  "galaxy.meteor.com": {
+    "env": {
+      "MONGO_URL": "mongodb://jiayingfeng:Amandaf25##@ds151820.mlab.com:51820/appdb"
+    }
+  }
+}
