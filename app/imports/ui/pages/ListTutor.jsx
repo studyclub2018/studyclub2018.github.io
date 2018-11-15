@@ -22,6 +22,7 @@ class ListTutor extends React.Component {
           <Table celled>
             <Table.Header>
               <Table.Row>
+                <Table.HeaderCell>Tutee</Table.HeaderCell>
                 <Table.HeaderCell>Course Name</Table.HeaderCell>
                 <Table.HeaderCell>Month</Table.HeaderCell>
                 <Table.HeaderCell>Day</Table.HeaderCell>

@@ -18,18 +18,21 @@ class ListStuffAdmin extends React.Component {
   renderPage() {
     return (
         <Container>
-          <Header as="h2" textAlign="center">List Stuff (Admin)</Header>
+          <Header as="h2" textAlign="center">Admin</Header>
           <Table celled>
             <Table.Header>
               <Table.Row>
-                <Table.HeaderCell>Name</Table.HeaderCell>
-                <Table.HeaderCell>Quantity</Table.HeaderCell>
-                <Table.HeaderCell>Condition</Table.HeaderCell>
-                <Table.HeaderCell>Owner</Table.HeaderCell>
+                <Table.HeaderCell>Tutee</Table.HeaderCell>
+                <Table.HeaderCell>Course Name</Table.HeaderCell>
+                <Table.HeaderCell>Month</Table.HeaderCell>
+                <Table.HeaderCell>Day</Table.HeaderCell>
+                <Table.HeaderCell>Time</Table.HeaderCell>
+                <Table.HeaderCell>Tutor</Table.HeaderCell>
+                <Table.HeaderCell>Edit</Table.HeaderCell>
+                <Table.HeaderCell>Delete</Table.HeaderCell>
               </Table.Row>
             </Table.Header>
-            <Table.Body>
-              {this.props.stuffs.map((stuff) => <StuffItemAdmin key={stuff._id} stuff={stuff} />)}
+            <Table.Body>{this.props.stuffs.map((stuff) => <StuffItemAdmin key={stuff._id} stuff={stuff} />)}
             </Table.Body>
           </Table>
         </Container>
@@ -39,7 +42,7 @@ class ListStuffAdmin extends React.Component {
 
 /** Require an array of Stuff documents in the props. */
 ListStuffAdmin.propTypes = {
-  stuffs: PropTypes.array.isRequired,
+  stuff: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
@@ -48,7 +51,7 @@ export default withTracker(() => {
   // Get access to Stuff documents.
   const subscription = Meteor.subscribe('StuffAdmin');
   return {
-    stuffs: Stuffs.find({}).fetch(),
+    stuff: Stuffs.find({}).fetch(),
     ready: subscription.ready(),
   };
 })(ListStuffAdmin);
