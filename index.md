@@ -5,6 +5,10 @@
 * [Milestone 2](#about-studyclub2018)
 * [Milestone 3](#about-studyclub2018)
 
+
+Visit our app at: <a href='http://studyclub2.meteorapp.com/'>study club</a>
+
+
 # About StudyClub
 
 StudyClub is a Meteor application for UHM ICS students to self-organize face-to-face study groups around a course and/or specific homework or project topic.
