@@ -3,7 +3,6 @@ import { Stuffs, StuffSchema } from '/imports/api/stuff/stuff';
 import { Grid, Segment, Header, Form } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
-import NumField from 'uniforms-semantic/NumField';
 import SelectField from 'uniforms-semantic/SelectField';
 import SubmitField from 'uniforms-semantic/SubmitField';
 import HiddenField from 'uniforms-semantic/HiddenField';
@@ -35,9 +34,15 @@ class CreateTutor extends React.Component {
 
   /** On submit, insert the data. */
   submit(data) {
+<<<<<<< HEAD
     const { tutee, courseName, month, day, time, tutor } = data;
     const owner = Meteor.user().username;
     Stuffs.insert({ tutee,courseName, month, day, time, owner, tutor }, this.insertCallback);
+=======
+    const { courseName, month, day, time, tutor, style } = data;
+    const owner = Meteor.user().username;
+    Stuffs.insert({ courseName, month, day, time, owner, tutor, style }, this.insertCallback);
+>>>>>>> 89a2e96966453adaa70f0ad687bcd98d27feb79d
   }
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
@@ -54,10 +59,15 @@ class CreateTutor extends React.Component {
                   <Form.Group widths='equal'>
                     <SelectField name='month' decimal={false}/>
                     <SelectField name='day' decimal={false}/>
-                    <NumField name='time' decimal={false}/>
+                    <SelectField name='time' decimal={false}/>
                   </Form.Group>
                 </Form>
-                <SelectField name='tutor'/>
+                <Form>
+                  <Form.Group widths='equal'>
+                    <SelectField name='tutor'/>
+                    <SelectField name='style'/>
+                  </Form.Group>
+                </Form>
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
                 <HiddenField name='owner' value='fakeuser@foo.com'/>

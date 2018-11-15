@@ -1,6 +1,9 @@
 # Table of contents
 
 * [About Study Club](#about-studyclub2018)
+* [Milestone 1](#about-studyclub2018)
+* [Milestone 2](#about-studyclub2018)
+* [Milestone 3](#about-studyclub2018)
 
 # About StudyClub
 
@@ -16,4 +19,15 @@ To encourage face-to-face interaction among ICS students.
 # Milestone 1
 
 <img class="ui floated image" src="../image/landing_page.jpg">
+
+<img class="ui floated image" src="../image/user_home_page.jpg">
+
+<img class="ui floated image" src="../image/user_profile_page.jpg">
+
+<img class="ui floated image" src="../image/admin_home_page.jpg">
+
+<img class="ui floated image" src="../image/calendar_page.jpg">
+
+
+
 
