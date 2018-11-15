@@ -6,22 +6,19 @@
 
   ],
 
-  "originalDefaultData": [
-    { "name": "Basket", "quantity": 3, "owner": "john@foo.com", "condition": "excellent" },
-    { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
-    { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
-    { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
-  ],
-
   "defaultData": [
     { "courseName": "ICS 321", "month": "April", "day": 4, "time": "6:45pm", "owner": "john@foo.com", "tutor": "jim" },
     { "courseName": "ICS 999", "month": "July", "day": 12, "time": "7:00pm","owner": "john@foo.com", "tutor": "nein" },
     { "courseName": "ICS 420", "month": "May", "day": 27, "time": "11:15am","owner": "john@foo.com", "tutor": "weedle" },
     { "courseName": "ICS 690", "month": "August", "day": 20, "time": "9:35am","owner": "john@foo.com", "tutor": "don" }
+<<<<<<< HEAD
   ],
   "galaxy.meteor.com": {
     "env": {
       "MONGO_URL": "mongodb://qiqingl:EvvvvvE2580#@ds147167.mlab.com:47167/appdb"
     }
   }
+=======
+  ]
+>>>>>>> 4f9980951c0bd8ddd2b98fcc8859c893a9285cef
 }
