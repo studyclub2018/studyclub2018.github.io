@@ -12,4 +12,4 @@ To encourage face-to-face interaction among ICS students
 QiQing Luo;
 Jiaying Feng;
 Christopher Lau;
-Xue Gong (Kristi)
+
