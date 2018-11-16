@@ -17,10 +17,10 @@ class EditTutor extends React.Component {
 
   /** On successful submit, insert the data. */
   submit(data) {
-    const { courseName, month, day, time, tutor, style, _id } = data;
-    Stuffs.update(_id, { $set: { courseName, month, day, time, tutor, style } }, (error) => (error ?
-        Bert.alert({ type: 'danger', message: `Could not edit session: ${error.message}` }) :
-        Bert.alert({ type: 'success', message: 'Session updated!' })));
+    const { tutee, courseName, month, day, time, tutor, style, _id } = data;
+    Stuffs.update(_id, { $set: { tutee, courseName, month, day, time, tutor, style } }, (error) => (error ?
+        Bert.alert({ type: 'danger', message: `Update failed: ${error.message} :(` }) :
+        Bert.alert({ type: 'success', message: 'Session successfully updated!' })));
   }
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
@@ -33,8 +33,8 @@ class EditTutor extends React.Component {
     return (
         <Grid container centered>
           <Grid.Column>
-            <Header as="h2" textAlign="center">Edit your tutoring session</Header>
-            <AutoForm ref={(ref) => { this.formRef = ref; }} schema={StuffSchema} onSubmit={this.submit}>
+            <Header as="h2" textAlign="center">Manage tutoring sessions</Header>
+            <AutoForm schema={StuffSchema} onSubmit={this.submit} model={this.props.doc}>
               <Segment>
                 <TextField name='tutee'/>
                 <TextField name='courseName'/>
