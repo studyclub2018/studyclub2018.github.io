@@ -33,7 +33,7 @@ class ListStuffAdmin extends React.Component {
                 <Table.HeaderCell>Delete</Table.HeaderCell>
               </Table.Row>
             </Table.Header>
-            <Table.Body>{this.props.stuffs.map((stuff) => <StuffItem key={stuff._id} stuff={stuff} />)}
+            <Table.Body>{this.props.stuffs.map((stuff, index) => <StuffItem key={index} stuff={stuff} />)}
             </Table.Body>
           </Table>
         </Container>

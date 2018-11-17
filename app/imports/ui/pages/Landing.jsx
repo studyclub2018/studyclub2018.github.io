@@ -10,7 +10,6 @@ class Landing extends React.Component {
     return (
         <div className='background'>
           <Grid columns={2} divided='vertically'>
-
             <Grid.Column textAlign='center' style={menuStyle1}>
               <Icon size='massive' name='student'/>
               <Header as='h1'>
