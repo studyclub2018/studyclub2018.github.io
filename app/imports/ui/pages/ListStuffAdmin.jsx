@@ -2,7 +2,7 @@ import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Container, Table, Header, Loader } from 'semantic-ui-react';
 import { Stuffs } from '/imports/api/stuff/stuff';
-import StuffItem from '/imports/ui/components/StuffItem';
+import StuffItemAdmin from '/imports/ui/components/StuffItemAdmin';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 
@@ -28,12 +28,14 @@ class ListStuffAdmin extends React.Component {
                 <Table.HeaderCell>Day</Table.HeaderCell>
                 <Table.HeaderCell>Time</Table.HeaderCell>
                 <Table.HeaderCell>Tutor</Table.HeaderCell>
+                <Table.HeaderCell>Owner</Table.HeaderCell>
                 <Table.HeaderCell>Style</Table.HeaderCell>
                 <Table.HeaderCell>Edit</Table.HeaderCell>
                 <Table.HeaderCell>Delete</Table.HeaderCell>
               </Table.Row>
             </Table.Header>
-            <Table.Body>{this.props.stuffs.map((stuff, index) => <StuffItem key={index} stuff={stuff} />)}
+            <Table.Body>
+              {this.props.stuffs.map((stuff) => <StuffItemAdmin key={stuff._id} stuff={stuff} />)}
             </Table.Body>
           </Table>
         </Container>
@@ -50,7 +52,7 @@ ListStuffAdmin.propTypes = {
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
 export default withTracker(() => {
   // Get access to Stuff documents.
-  const subscription = Meteor.subscribe('Stuff');
+  const subscription = Meteor.subscribe('StuffAdmin');
   return {
     stuffs: Stuffs.find({}).fetch(),
     ready: subscription.ready(),
