@@ -1,9 +1,9 @@
 # Table of contents
 
-* [About Study Club](#about-studyclub2018)
+* [About Study Club](#about-studyclub)
 * [Milestone 1](#Milestone1)
-* [Milestone 2](#about-studyclub2018)
-* [Milestone 3](#about-studyclub2018)
+* [Milestone 2](#about-studyclub)
+* [Milestone 3](#about-studyclub)
 
 
 Visit our app at: <a href='http://studyclub2.meteorapp.com/'>study club</a>
