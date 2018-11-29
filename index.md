@@ -83,6 +83,7 @@ _The picture below shows the pages that we created in M1._
 
 <img class="ui floated image" src="../image/M1.png">
 
+
 **Milestone 2**
 
 For the milestone 2, we will continue to develop the pages that we created in M1 and Significantly improve the functionality and quality of our application beyond M1. Significantly improve your software engineering process beyond M1. We will change the design of our app and edit the github page. Besides the pages that we developed in M1, we might create a calendar page and a game mechanic page, otherwise, we will continue to develop those two pages in M3.
@@ -96,19 +97,27 @@ We changed the design of the landing page.
 
 User could sign in or create an account through the landing page. After signed in, users can choose to become a tutor or to create a study session.
 
+
 <img class="ui floated image" src="../image/LandingPage4.png">
+
 
 The landing page includes the description of the study club and users can start a study session by clicking on the `Create a Study Session Now!`.
 
+
 <img class="ui floated image" src="../image/LandingPage3.png">
+
 
 The landing page introduced our chef officer.
 
+
 <img class="ui floated image" src="../image/LandingPage5.png">
+
 
 The footer of the landing page includes the access to our github page and the information about our organization.
 
+
 <image class="ui floated image" src="../image/UserProfile.png">
+
 
 Users could create or edit their profile through the user profile page.
 
