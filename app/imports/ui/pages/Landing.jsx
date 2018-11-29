@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import {
   Button,
@@ -8,14 +7,12 @@ import {
   Header,
   Icon,
   Image,
-  List,
   Segment,
 } from 'semantic-ui-react';
 import { Meteor } from 'meteor/meteor';
 import { Roles } from 'meteor/alanning:roles';
 import Footer from '../components/Footer';
 import { NavLink } from 'react-router-dom';
-import { Dropdown } from 'semantic-ui-react/dist/commonjs/modules/Dropdown/Dropdown';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
@@ -57,7 +54,7 @@ class Landing extends React.Component {
         <div className='background'>
           <Grid columns={2} divided='vertically'>
             <Grid.Column textAlign='center' style={menuStyle1}>
-              <Icon size='massive' name='student'/>
+              <Icon inverted size='massive' name='student'/>
               <Header as='h1'>
                 <Button inverted color='black' as={NavLink} exact to="/signin">
                   Get a Tutor
@@ -69,7 +66,7 @@ class Landing extends React.Component {
               </h2>
             </Grid.Column>
             <Grid.Column textAlign='center' style={menuStyle1}>
-              <Icon size='massive' name='jenkins'/>
+              <Icon inverted size='massive' name='jenkins'/>
               <Header as='h1'>
                 <Button inverted color='black' as={NavLink} exact to="/signin">
                   Become a Tutor
@@ -87,18 +84,19 @@ class Landing extends React.Component {
                 <Grid.Row>
                   <Grid.Column width={8}>
                     <Header as='h3' style={{ fontSize: '2em' }}>
-                      We Help Companies and Companions
+                      We Help ICS Students
                     </Header>
                     <p style={{ fontSize: '1.33em' }}>
-                      We can give your company superpowers to do things that they never thought possible.
-                      Let us delight your customers and empower your needs... through pure data analytics.
+                      Study Club is an application for UHM ICS students to self-organize face-to-face study groups
+                      around a course and/or specific homework or project topic.
                     </p>
                     <Header as='h3' style={{ fontSize: '2em' }}>
-                      We Make Bananas That Can Dance
+                      WHY?
                     </Header>
                     <p style={{ fontSize: '1.33em' }}>
-                      Yes that's right, you thought it was the stuff of dreams, but even bananas can be
-                      bioengineered.
+                      ICS students often spend more time than they need on their homework and don’t learn the material
+                      as effectively as they could, because they study alone and do not leverage the power of
+                      face-to-face study groups with peer mentors.
                     </p>
                   </Grid.Column>
                   <Grid.Column floated='right' width={6}>
@@ -107,7 +105,7 @@ class Landing extends React.Component {
                 </Grid.Row>
                 <Grid.Row>
                   <Grid.Column textAlign='center'>
-                    <Button primary size='huge'>Check Them Out</Button>
+                    <Button primary size='huge' as={NavLink} exact to="/create">Create a Study Session Now!</Button>
                   </Grid.Column>
                 </Grid.Row>
               </Grid>
@@ -117,17 +115,17 @@ class Landing extends React.Component {
                 <Grid.Row textAlign='center'>
                   <Grid.Column style={{ paddingBottom: '3em', paddingTop: '3em' }}>
                     <Header as='h3' style={{ fontSize: '2em' }}>
-                      "What a Company"
+                      "What a Great Study Club"
                     </Header>
                     <p style={{ fontSize: '1.33em' }}>That is what they all say about us</p>
                   </Grid.Column>
                   <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
                     <Header as='h3' style={{ fontSize: '2em' }}>
-                      "I shouldn't have gone with their competitor."
+                      "It has never been late to join the study club."
                     </Header>
                     <p style={{ fontSize: '1.33em' }}>
-                      <Image avatar src='/images/avatar/large/nan.jpg'/>
-                      <b>Nan</b> Chief Fun Officer Acme Toys
+                      <Image size='tiny' avatar src='/images/amanda.jpg'/>
+                      <b>Amanda Feng</b> Chief Officer
                     </p>
                   </Grid.Column>
                 </Grid.Row>
@@ -139,12 +137,16 @@ class Landing extends React.Component {
                   Breaking The Grid, Grabs Your Attention
                 </Header>
                 <p style={{ fontSize: '1.33em' }}>
-                  Instead of focusing on content creation and hard work, we have learned how to master the
-                  art of doing nothing by providing massive amounts of whitespace and generic content that
-                  can seem massive, monolithic and worth your attention.
+                  To use Study Club, a student must login and set up their profile. The profile enables each student to
+                  list courses they have taken and for which they are willing to attempt to provide help (sensei), and
+                  courses they are currently taking and for which they might need help (grasshopper). Thus, all students
+                  are sensei in some courses and grasshoppers in other courses. Each student must also provide a head
+                  shot so that they can be visually identified.
+
+
                 </p>
-                <Button primary as='a' size='large'>
-                  Read More
+                <Button primary as='a' size='large' as={NavLink} exact to="/signin">
+                  Join Us Today!
                 </Button>
                 <Divider
                     as='h4'
@@ -155,14 +157,13 @@ class Landing extends React.Component {
                   <a href='#'>Case Studies</a>
                 </Divider>
                 <Header as='h3' style={{ fontSize: '2em' }}>
-                  Did We Tell You About Our Bananas?
+                  Did We Tell You About Our Organization?
                 </Header>
                 <p style={{ fontSize: '1.33em' }}>
-                  Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but
-                  it's really true. It took years of gene splicing and combinatory DNA research, but our
-                  bananas can really dance.
+                  Yes I know you hardly know us. We are a non-profit organization! You can sign up an account for free.
+                  By the way, this is a good chance for you to interact with different people. Don't miss us!
                 </p>
-                <Button primary as='a' size='large'>
+                <Button primary as='a' size='large' as={NavLink} exact to="/signin">
                   I'm Still Quite Interested
                 </Button>
               </Container>
