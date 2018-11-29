@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, List } from 'semantic-ui-react';
+import { Container, Grid, Header, List, Segment } from 'semantic-ui-react';
 
 /** The Footer appears at the bottom of every page. Rendered by the App Layout component. */
 class Footer extends React.Component {
@@ -7,44 +7,45 @@ class Footer extends React.Component {
     return (
         <footer>
           <div className="footer-background">
-            <Grid container columns="3">
-              <Grid.Column>
-                <h3 id="down-txt">
-                NAVIGATION
-                </h3>
-                <hr/>
-                <List>
-                  <List.Item>About us</List.Item>
-                  <List.Item>Videos</List.Item>
-                  <List.Item>Contact</List.Item>
-                </List>
-              </Grid.Column>
-
-              <Grid.Column>
-                <h3 id="down-txt">
-                DESCRIPTION
-                </h3>
-                <hr/>
-                To encourage use of ICSpace among ICS students To minimize risk of inappropriate encounters by requiring
-                all meetings to occur in ICSpace. To encourage face-to-face interaction among ICS students
-              </Grid.Column>
-
-              <Grid.Column>
-                <h3 id="down-txt">
-                CONNECT
-                </h3>
-                <hr/>
-                <List>
-                  <List.Item><a href="http://courses.ics.hawaii.edu/ics314f18/morea/final-project/
+            <Segment inverted vertical style={{ padding: '5em 0em' }}>
+              <Container>
+                <Grid divided inverted stackable>
+                  <Grid.Row>
+                    <Grid.Column width={3}>
+                      <Header inverted as='h4' content=' NAVIGATION'/>
+                      <List link inverted>
+                        <List.Item as='a'>Contact Us</List.Item>
+                        <List.Item as='a'>Videos</List.Item>
+                        <List.Item as='a'>About us</List.Item>
+                      </List>
+                    </Grid.Column>
+                    <Grid.Column width={3}>
+                      <Header inverted as='h4' content='DESCRIPTION'/>
+                      <List link inverted>
+                        <List.Item as='a'>Banana Pre-Order</List.Item>
+                        <List.Item as='a'>DNA FAQ</List.Item>
+                        <List.Item as='a'>How To Access</List.Item>
+                        <List.Item as='a'>Favorite X-Men</List.Item>
+                      </List>
+                    </Grid.Column>
+                    <Grid.Column width={7}>
+                      <Header as='h4' inverted>
+                        CONNECT
+                      </Header>
+                      <List link inverted>
+                        <List.Item><a href="http://courses.ics.hawaii.edu/ics314f18/morea/final-project/
                   experience-final-project-m1.html">
-                    Final Project: Milestone 1</a>
-                  </List.Item>
-                  <List.Item>
-                    <a href="https://studyclub2018.github.io/">View on Github</a>
-                  </List.Item>
-                </List>
-              </Grid.Column>
-            </Grid>
+                          Final Project: Milestone 1</a>
+                        </List.Item>
+                        <List.Item>
+                          <a href="https://studyclub2018.github.io/">View on Github</a>
+                        </List.Item>
+                      </List>
+                    </Grid.Column>
+                  </Grid.Row>
+                </Grid>
+              </Container>
+            </Segment>
           </div>
         </footer>
     );
