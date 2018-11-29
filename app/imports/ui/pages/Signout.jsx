@@ -2,7 +2,6 @@ import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Header } from 'semantic-ui-react';
 import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
 
 /** After the user clicks the "Signout" link in the NavBar, log them out and display this page. */
 export default class Signout extends React.Component {

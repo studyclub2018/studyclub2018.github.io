@@ -125,6 +125,9 @@ Users could create or edit their profile through the user profile page.
 
 **Milestone 2 was implemented as <a href='https://github.com/studyclub2018/studyclub2018.github.io/projects/4'>Study Club Github Milestone 2 </a>: **
 
+
+
+
 **Milestone 3**
 
 **Milestone 3 was implemented as <a href='https://github.com/studyclub2018/studyclub2018.github.io/projects/5'>Study Club Github Milestone 3 </a>: **
