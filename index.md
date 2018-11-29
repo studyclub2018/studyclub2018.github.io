@@ -92,19 +92,19 @@ For the milestone 2, we will continue to develop the pages that we created in M1
 
 We changed the design of the landing page.
 
-<img class="ui floated image" src="../image/LandingPage1_M2.png">
+<img class="ui floated image" src="../image/LandingPage1.png">
 
 User could sign in or create an account through the landing page. After signed in, users can choose to become a tutor or to create a study session.
 
-<img class="ui floated image" src="../image/LandingPage4_M2.png">
+<img class="ui floated image" src="../image/LandingPage4.png">
 
 The landing page includes the description of the study club and users can start a study session by clicking on the `Create a Study Session Now!`.
 
-<img class="ui floated image" src="../image/LandingPage3_M2.png">
+<img class="ui floated image" src="../image/LandingPage3.png">
 
 The landing page introduced our chef officer.
 
-<img class="ui floated image" src="../image/LandingPage5_M2.png">
+<img class="ui floated image" src="../image/LandingPage5.png">
 
 The footer of the landing page includes the access to our github page and the information about our organization.
 
