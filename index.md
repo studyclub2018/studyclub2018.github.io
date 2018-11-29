@@ -2,8 +2,8 @@
 
 * [About Study Club](#about-studyclub)
 * [Milestone 1](#Milestone1)
-* [Milestone 2](#about-studyclub)
-* [Milestone 3](#about-studyclub)
+* [Milestone 2](#Milestone2)
+* [Milestone 3](#Milestone3)
 
 
 Visit our app at: <a href='http://studyclub2.meteorapp.com/'>study club</a>
