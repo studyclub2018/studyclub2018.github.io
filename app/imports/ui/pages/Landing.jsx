@@ -12,7 +12,6 @@ import {
 import { NavLink } from 'react-router-dom';
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
-
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
   render() {
@@ -54,18 +53,21 @@ class Landing extends React.Component {
                 <Grid.Row>
                   <Grid.Column width={8}>
                     <Header as='h3' style={{ fontSize: '2em' }}>
-                      We Help Companies and Companions
+                      We Help ICS Students
                     </Header>
                     <p style={{ fontSize: '1.33em' }}>
-                      We can give your company superpowers to do things that they never thought possible.
-                      Let us delight your customers and empower your needs... through pure data analytics.
+                      Study Club is an application for UHM ICS students
+                      to self-organize face-to-face study groups around
+                      a course and/or specific homework or project topic.
                     </p>
                     <Header as='h3' style={{ fontSize: '2em' }}>
-                      We Make Bananas That Can Dance
+                      WHY?
                     </Header>
                     <p style={{ fontSize: '1.33em' }}>
-                      Yes thats right, you thought it was the stuff of dreams, but even bananas can be
-                      bioengineered.
+                      ICS students often spend more time than they need on
+                      their homework and don’t learn the material as effectively as they could,
+                      because they study alone and do not leverage the power of face-to-face study
+                      groups with peer mentors.
                     </p>
                   </Grid.Column>
                   <Grid.Column floated='right' width={6}>
@@ -74,7 +76,7 @@ class Landing extends React.Component {
                 </Grid.Row>
                 <Grid.Row>
                   <Grid.Column textAlign='center'>
-                    <Button primary size='huge'>Check Them Out</Button>
+                    <Button primary size='huge'>Create a Study Session Now!</Button>
                   </Grid.Column>
                 </Grid.Row>
               </Grid>
