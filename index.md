@@ -1,16 +1,16 @@
 # Table of contents
 
 * [About Study Club](#about-studyclub)
-* [Milestone 1](#Milestone1)
-* [Milestone 2](#Milestone2)
-* [Milestone 3](#Milestone3)
+* [Milestone 1](#milestone-1)
+* [Milestone 2](#milestone-2)
+* [Milestone 3](#milestone-3)
 
 
 Visit our app at: <a href='http://studyclub2.meteorapp.com/'>study club</a>
 
 
 
-# About StudyClub
+# About StudyClub:
 
 StudyClub is a Meteor application for UHM ICS students to self-organize face-to-face study groups around a course and/or specific homework or project topic.
 
@@ -38,7 +38,7 @@ The application should appear at **http://localhost:3000** .
 
 **Development History**
 
-# Milestone 1: Mockup development
+# Milestone 1:
 
 Milestone 1 started on Nov 5, 2018 and completed Nov 15, 2018.
 
@@ -84,7 +84,7 @@ _The picture below shows the pages that we created in M1._
 <img class="ui floated image" src="../image/M1.png">
 
 
-**Milestone 2**
+# Milestone 2:
 
 For the milestone 2, we will continue to develop the pages that we created in M1 and Significantly improve the functionality and quality of our application beyond M1. Significantly improve your software engineering process beyond M1. We will change the design of our app and edit the github page. Besides the pages that we developed in M1, we might create a calendar page and a game mechanic page, otherwise, we will continue to develop those two pages in M3.
 
@@ -128,7 +128,7 @@ Users could create or edit their profile through the user profile page.
 
 
 
-**Milestone 3**
+# Milestone 3:
 
 **Milestone 3 was implemented as <a href='https://github.com/studyclub2018/studyclub2018.github.io/projects/5'>Study Club Github Milestone 3 </a>: **
 
