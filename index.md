@@ -93,7 +93,9 @@ For the milestone 2, we will continue to develop the pages that we created in M1
 
 We changed the design of the landing page.
 
+
 <img class="ui floated image" src="../image/LandingPage1.png">
+
 
 User could sign in or create an account through the landing page. After signed in, users can choose to become a tutor or to create a study session.
 
