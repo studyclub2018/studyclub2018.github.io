@@ -9,6 +9,7 @@ import HiddenField from 'uniforms-semantic/HiddenField';
 import ErrorsField from 'uniforms-semantic/ErrorsField';
 import { Bert } from 'meteor/themeteorchef:bert';
 import { Meteor } from 'meteor/meteor';
+import NavBar from '../components/NavBar';
 
 
 /** Renders the Page for adding a document. */
@@ -41,8 +42,11 @@ class CreateTutor extends React.Component {
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   render() {
+    const menuStyle = { paddingTop: '50px' };
     return (
-        <Grid container centered>
+        <div>
+          <NavBar/>
+        <Grid container centered style={menuStyle}>
           <Grid.Column>
             <Header as="h2" textAlign="center">Create a tutoring session</Header>
             <AutoForm ref={(ref) => { this.formRef = ref; }} schema={StuffSchema} onSubmit={this.submit}>
@@ -69,6 +73,7 @@ class CreateTutor extends React.Component {
             </AutoForm>
           </Grid.Column>
         </Grid>
+        </div>
     );
   }
 }

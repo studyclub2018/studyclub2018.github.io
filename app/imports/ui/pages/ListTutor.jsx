@@ -5,6 +5,7 @@ import { Stuffs } from '/imports/api/stuff/stuff';
 import StuffItem from '/imports/ui/components/StuffItem';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import NavBar from '../components/NavBar';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class ListTutor extends React.Component {
@@ -16,8 +17,11 @@ class ListTutor extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
+    const menuStyle = { paddingTop: '50px' };
     return (
-        <Container>
+        <div>
+          <NavBar/>
+        <Container style={menuStyle}>
           <Header as="h2" textAlign="center">List of Sessions</Header>
           <Table celled>
             <Table.Header>
@@ -37,6 +41,7 @@ class ListTutor extends React.Component {
             </Table.Body>
           </Table>
         </Container>
+        </div>
     );
   }
 }

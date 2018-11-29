@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Image, Container, Button, Form, Grid, Dropdown, Input } from 'semantic-ui-react';
+import NavBar from '../components/NavBar';
 
 const hobbiesoptions = [
   { key: 'hobby option 1', text: 'Civil Engineering', value: 'hobby option 1' },
@@ -16,8 +17,11 @@ const courseoptions = [
 /** A simple static component to render some text for the landing page. */
 class UserProfile extends React.Component {
   render() {
+    const menuStyle = { paddingTop: '50px' };
     return (
-        <Container>
+        <div>
+          <NavBar/>
+        <Container style={menuStyle}>
           <Grid columns={2} centered celled='internally'>
             <Grid.Row>
               <Grid.Column width={5}>
@@ -89,6 +93,7 @@ class UserProfile extends React.Component {
             </Grid.Row>
           </Grid>
         </Container>
+        </div>
     );
   }
 }
