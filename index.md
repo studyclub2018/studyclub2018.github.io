@@ -78,7 +78,8 @@ _The picture below shows the pages that we created in M1._
 
 **The list study session page shows the list of the study session that been booked.**
 
-**Milestone 1 was implemented as <a href=https://github.com/studyclub2018/studyclub2018.github.io/projects/3'>Study Club Github Milestone 1 </a>: **
+**Milestone 1 was implemented as <a href='https://github.com/studyclub2018/studyclub2018.github.io/projects/3'>Study Club Github Milestone 1 </a>: **
+
 
 <img class="ui floated image" src="../image/M1.png">
 
@@ -111,11 +112,11 @@ The footer of the landing page includes the access to our github page and the in
 
 Users could create or edit their profile through the user profile page.
 
-**Milestone 2 was implemented as <a href=https://github.com/studyclub2018/studyclub2018.github.io/projects/4'>Study Club Github Milestone 2 </a>: **
+**Milestone 2 was implemented as <a href='https://github.com/studyclub2018/studyclub2018.github.io/projects/4'>Study Club Github Milestone 2 </a>: **
 
 **Milestone 3**
 
-**Milestone 3 was implemented as <a href=https://github.com/studyclub2018/studyclub2018.github.io/projects/5'>Study Club Github Milestone 3 </a>: **
+**Milestone 3 was implemented as <a href='https://github.com/studyclub2018/studyclub2018.github.io/projects/5'>Study Club Github Milestone 3 </a>: **
 
 
 
