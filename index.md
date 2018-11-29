@@ -34,7 +34,7 @@ Fourth, run the system with:
 
 `meteor npm run start`
 
-The application should appear at http://localhost:3000 .
+The application should appear at **http://localhost:3000** .
 
 **Development History**
 
@@ -78,7 +78,7 @@ _The picture below shows the pages that we created in M1._
 
 **The list study session page shows the list of the study session that been booked.**
 
-**Milestone 1 was implemented as <a href='https://github.com/studyclub2018/studyclub2018.github.io/projects/3'>Study Club Github Milestone 1 </a>: **
+**Milestone 1 was implemented as <a href='https://github.com/studyclub2018/studyclub2018.github.io/projects/3'>Study Club Github Milestone 1 </a>:**
 
 
 <img class="ui floated image" src="../image/M1.png">
