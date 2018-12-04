@@ -23,13 +23,13 @@ class Landing extends React.Component {
     const menuStyle2 = { marginTop: 120, paddingRight: 60 };
     const isAdmin = Roles.userIsInRole(Meteor.userId(), 'admin');
     if (isAdmin) {
-      return(
+      return (
       <div>
         <AdminNavBar/>
         <div className='background'>
           <Grid columns={2} divided='vertically'>
             <Grid.Column textAlign='center' style={menuStyle1}>
-              <Icon size='massive' name='student'/>
+              <Icon size='massive' name='edit'/>
               <Header as='h1'>
                 <Button inverted color='black' as={NavLink} exact to="/EditStuff">
                   Edit the study session
@@ -40,7 +40,7 @@ class Landing extends React.Component {
             </Grid.Column>
 
             <Grid.Column textAlign='center' style={menuStyle2}>
-              <Icon size='massive' name='jenkins'/>
+              <Icon size='massive' name='calendar alternate'/>
               <Header as='h1'>
                 <Button inverted color='black' as={NavLink} exact to="/StuffItemAdmin">
                   View current study session list.

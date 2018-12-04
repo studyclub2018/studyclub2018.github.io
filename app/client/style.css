@@ -3,9 +3,13 @@
   background-size: cover;
   height: 650px;
 }
-
+.admin-background {
+  background-color: white;
+  background-size: cover;
+  height: 700px;
+}
 .footer-background {
-  background-color: black;
+  background-color: white;
   color: white;
   margin-top: 20px;
   padding-top: 20px;
