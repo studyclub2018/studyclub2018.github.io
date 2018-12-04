@@ -3,21 +3,45 @@ import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { withRouter, NavLink } from 'react-router-dom';
-import { Menu, Dropdown, Image } from 'semantic-ui-react';
+import { Menu, Dropdown, Image, Visibility, Segment, Container, fixed } from 'semantic-ui-react';
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class NavBar extends React.Component {
   render() {
-    const menuStyle = { marginBottom: '0px' };
+    const menuStyle = { marginBottom: '0em' };
     return (
         <Menu style={menuStyle} attached="top" borderless color='white'>
-          <Menu.Item as={NavLink} activeClassName="" exact to="/">
-            <Menu.Item><Image size='tiny' avatar src="/images/logo.png"/></Menu.Item>
-          </Menu.Item>
-              <Menu.Item as={NavLink} activeClassName="active" exact to="/create" key='add'>Create a tutoring
-                session</Menu.Item>,
-                <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>List tutoring
-                  sessions</Menu.Item>
+          <Visibility
+              once={false}
+              onBottomPassed={this.showFixedMenu}
+              onBottomPassedReverse={this.hideFixedMenu}
+          >
+            <Segment
+                inverted
+                textAlign='center'
+                style={{ minHeight: 10, padding: '1em 0em' }}
+                vertical
+            >
+              <Menu
+                  fixed={fixed ? 'top' : null}
+                  inverted={!fixed}
+                  pointing={!fixed}
+                  secondary={!fixed}
+                  size='large'
+              >
+                <Container>
+                  <Menu.Item as={NavLink} activeClassName="" exact to="/">
+                    <Menu.Item><Image size='tiny' avatar src="/images/logo.png"/></Menu.Item>
+                  </Menu.Item>
+                  <Menu.Item as={NavLink} activeClassName="active" exact to="/create" key='add'>Create a tutoring
+                    session
+                  </Menu.Item>
+                  <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>List tutoring
+                    sessions</Menu.Item>
+                </Container>
+              </Menu>
+            </Segment>
+          </Visibility>
           <Menu.Item position="right">
             {this.props.currentUser === '' ? (
                 <Dropdown text="Login" pointing="top right" icon={'user'}>

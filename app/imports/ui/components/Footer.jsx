@@ -15,16 +15,14 @@ class Footer extends React.Component {
                       <Header inverted as='h4' content=' NAVIGATION'/>
                       <List link inverted>
                         <List.Item as='a'>Contact Us</List.Item>
-                        <List.Item as='a'>Videos</List.Item>
-                        <List.Item as='a'>About us</List.Item>
+                        <List.Item as='a'>About Us</List.Item>
                       </List>
                     </Grid.Column>
                     <Grid.Column width={3}>
                       <Header inverted as='h4' content='DESCRIPTION'/>
                       <List link inverted>
-                        <List.Item as='a'>FAQ</List.Item>
                         <List.Item as='a'>How To Access</List.Item>
-                        <List.Item as='a'>Favorite Course</List.Item>
+                        <List.Item as='a'>Available Course</List.Item>
                       </List>
                     </Grid.Column>
                     <Grid.Column width={7}>
