@@ -14,7 +14,6 @@ import { Roles } from 'meteor/alanning:roles';
 import { Meteor } from 'meteor/meteor';
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
-import AdminNavBar from '../components/AdminNavBar';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
@@ -25,24 +24,24 @@ class Landing extends React.Component {
     if (isAdmin) {
       return (
           <div>
-            <AdminNavBar/>
+            <NavBar/>
             <div className='background'>
               <Grid columns={2} divided='vertically'>
                 <Grid.Column textAlign='center' style={menuStyle1}>
                   <Icon size='massive' name='edit' inverted/>
                   <Header as='h1'>
-                    <Button inverted color='black' as={NavLink} activeClassName="active" exact to="/admin" key='admin'>
-                      Edit the study session
+                    <Button inverted color='black' as={NavLink} activeClassName="active" exact to="/create" key='add'>
+                     Add a study session
                     </Button>
                   </Header>
-                  <h2 id="left-txt">Edit a study session.
+                  <h2 id="left-txt">create a study session for your students.
                   </h2>
                 </Grid.Column>
 
                 <Grid.Column textAlign='center' style={menuStyle2}>
                   <Icon size='massive' name='calendar alternate' inverted/>
                   <Header as='h1'>
-                    <Button inverted color='black' as={NavLink} exact to="/StuffItemAdmin">
+                    <Button inverted color='black' as={NavLink} activeClassName="active" exact to="/admin" key='admin'>
                       View current study session list.
                     </Button>
                   </Header>

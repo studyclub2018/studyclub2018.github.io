@@ -11,7 +11,7 @@ import ErrorsField from 'uniforms-semantic/ErrorsField';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
-import AdminNavBar from '../components/AdminNavBar';
+import NavBar from '../components/NavBar';
 
 /** Renders the Page for editing a single document. */
 class EditAdmin extends React.Component {
@@ -34,7 +34,7 @@ class EditAdmin extends React.Component {
     const menuStyle = { paddingTop: '50px' };
     return (
         <div>
-          <AdminNavBar/>
+          <NavBar/>
           <Container style={menuStyle}>
         <Grid container centered style={menuStyle}>
           <Grid.Column>

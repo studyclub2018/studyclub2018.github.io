@@ -5,7 +5,7 @@ import { Stuffs } from '/imports/api/stuff/stuff';
 import StuffItemAdmin from '/imports/ui/components/StuffItemAdmin';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
-import AdminNavBar from '../components/NavBar';
+import NavBar from '../components/NavBar';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class ListStuffAdmin extends React.Component {
@@ -20,7 +20,7 @@ class ListStuffAdmin extends React.Component {
     const menuStyle = { paddingTop: '50px' };
     return (
         <div>
-          <AdminNavBar/>
+          <NavBar/>
           <Grid container centered style={menuStyle}>
           <Header as="h2" textAlign="center">List current study sessions</Header>
           <Table celled>
