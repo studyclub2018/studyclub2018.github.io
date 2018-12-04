@@ -3,10 +3,18 @@
   background-size: cover;
   height: 650px;
 }
+
 .admin-background {
   background-color: white;
   background-size: cover;
   height: 700px;
+}
+
+.background1 {
+  background: url('/images/beach.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 530px;
+
 }
 .footer-background {
   background-color: white;
