@@ -48,9 +48,10 @@ class UserProfile extends React.Component {
   render() {
     const menuStyle = { paddingTop: '50px'};
     return (
-        <div className='background1'>
+        <div>
           <NavBar/>
-          <Container style={menuStyle}>
+          <div className='background1'>
+          <Grid Container style={menuStyle}>
             <Grid columns={2} centered celled='internally'>
               <Grid.Row>
                 <Grid.Column width={5}>
@@ -121,7 +122,8 @@ class UserProfile extends React.Component {
                 </Grid.Column>
               </Grid.Row>
             </Grid>
-          </Container>
+          </Grid>
+        </div>
         </div>
           );
           }
