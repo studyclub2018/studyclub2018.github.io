@@ -44,8 +44,9 @@ class CreateTutor extends React.Component {
   render() {
     const menuStyle = { paddingTop: '50px' };
     return (
-        <div className='background1'>
+        <div>
           <NavBar/>
+        <div className='background1'>
         <Grid container centered style={menuStyle}>
           <Grid.Column>
             <Header as="h2" textAlign="center">Create a Tutoring Session</Header>
@@ -73,6 +74,7 @@ class CreateTutor extends React.Component {
             </AutoForm>
           </Grid.Column>
         </Grid>
+        </div>
         </div>
     );
   }

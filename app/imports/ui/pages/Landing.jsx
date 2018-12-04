@@ -153,7 +153,7 @@ class Landing extends React.Component {
 
 
                 </p>
-                <Button primary as='a' size='large' as={NavLink} exact to="/signin">
+                <Button primary size='large' as={NavLink} exact to="/signin">
                   Join Us Today!
                 </Button>
                 <Divider
@@ -171,7 +171,7 @@ class Landing extends React.Component {
                   Yes I know you hardly know us. We are a non-profit organization! You can sign up an account for free.
                   By the way, this is a good chance for you to interact with different people. Don't miss us!
                 </p>
-                <Button primary as='a' size='large' as={NavLink} exact to="/signin">
+                <Button primary size='large' as={NavLink} exact to="/signin">
                   I'm Still Quite Interested
                 </Button>
               </Container>

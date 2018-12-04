@@ -35,3 +35,7 @@
   font-size: 25px;
   color: white;
 }
+div.ui.container a.item {
+  font-size: 20px;
+  padding-bottom: 20px;
+}

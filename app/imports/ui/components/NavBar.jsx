@@ -8,30 +8,29 @@ import { Menu, Dropdown, Image, Visibility, Segment, Container, fixed } from 'se
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class NavBar extends React.Component {
   render() {
-    const menuStyle = { marginBottom: '0em' };
+    const menuStyle = { margin: '0em', padding: '0em' };
     return (
-        <Menu style={menuStyle} attached="top" borderless color='white'>
+        <Menu style={menuStyle} attached="top" borderless>
           <Visibility
               once={false}
               onBottomPassed={this.showFixedMenu}
               onBottomPassedReverse={this.hideFixedMenu}
           >
             <Segment
-                inverted
                 textAlign='center'
-                style={{ minHeight: 10, padding: '1em 0em' }}
+                style={{ menuStyle }}
                 vertical
             >
               <Menu
                   fixed={fixed ? 'top' : null}
-                  inverted={!fixed}
+                  inverted={fixed}
                   pointing={!fixed}
                   secondary={!fixed}
                   size='large'
               >
-                <Container>
-                  <Menu.Item as={NavLink} activeClassName="" exact to="/">
-                    <Menu.Item><Image size='tiny' avatar src="/images/logo.png"/></Menu.Item>
+                <Container style={{ menuStyle }}>
+                  <Menu.Item as={NavLink} activeClassName="" exact to="/" style={menuStyle}>
+                    <Menu.Item style={menuStyle}><Image size='tiny' avatar src="/images/logo.png"/></Menu.Item>
                   </Menu.Item>
                   <Menu.Item as={NavLink} activeClassName="active" exact to="/create" key='add'>Create a tutoring
                     session
