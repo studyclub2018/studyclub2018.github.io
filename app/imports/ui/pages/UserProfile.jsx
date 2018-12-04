@@ -1,5 +1,10 @@
 import React from 'react';
+import { Users, UserSchema } from '/imports/api/stuff/stuff';
 import { Card, Image, Container, Button, Form, Grid, Dropdown, Input } from 'semantic-ui-react';
+import AutoForm from 'uniforms-semantic/AutoForm';
+import { Bert } from 'meteor/themeteorchef:bert';
+import { Meteor } from 'meteor/meteor';
+
 
 const hobbiesoptions = [
   { key: 'hobby option 1', text: 'Civil Engineering', value: 'hobby option 1' },
@@ -15,10 +20,36 @@ const courseoptions = [
 
 /** A simple static component to render some text for the landing page. */
 class UserProfile extends React.Component {
+  /** Bind 'this' so that a ref to the Form can be saved in formRef and communicated between render() and submit(). */
+  constructor(props) {
+    super(props);
+    this.submit = this.submit.bind(this);
+    this.insertCallback = this.insertCallback.bind(this);
+    this.formRef = null;
+  }
+
+  /** Notify the user of the results of the submit. If successful, clear the form. */
+  insertCallback(error) {
+    if (error) {
+      Bert.alert({ type: 'danger', message: `Could not update the user profile: ${error.message}` });
+    } else {
+      Bert.alert({ type: 'success', message: 'User profile succesfully updated!' });
+      this.formRef.reset();
+    }
+  }
+
+  /** On submit, insert the data. */
+  submit(data) {
+    const { firstName, lastName, bio, gender, email } = data;
+    const owner = Meteor.user().username;
+    Users.insert({ firstName, lastName, bio, gender, email, owner }, this.insertCallback);
+  }
+
   render() {
     return (
         <Container>
           <Grid columns={2} centered celled='internally'>
+            <AutoForm ref={(ref) => { this.formRef = ref; }} schema={UserSchema} onSubmit={this.submit}>
             <Grid.Row>
               <Grid.Column width={5}>
                 <Card>
@@ -84,9 +115,9 @@ class UserProfile extends React.Component {
 
                 <br></br>
                 <Button floated={'right'}>Submit</Button>
-
               </Grid.Column>
             </Grid.Row>
+            </AutoForm>
           </Grid>
         </Container>
     );

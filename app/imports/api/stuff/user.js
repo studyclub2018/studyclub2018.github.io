@@ -12,6 +12,7 @@ const UserSchema = new SimpleSchema({
   bio: String,
   gender: String,
   email: String,
+  owner: String,
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */
