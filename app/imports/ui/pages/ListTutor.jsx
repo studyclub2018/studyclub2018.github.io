@@ -19,28 +19,28 @@ class ListTutor extends React.Component {
   renderPage() {
     const menuStyle = { paddingTop: '50px' };
     return (
-        <div>
+        <div className='background1'>
           <NavBar/>
-        <Container style={menuStyle}>
-          <Header as="h2" textAlign="center">List of Sessions</Header>
-          <Table celled>
-            <Table.Header>
-              <Table.Row>
-                <Table.HeaderCell>Tutee</Table.HeaderCell>
-                <Table.HeaderCell>Course Name</Table.HeaderCell>
-                <Table.HeaderCell>Month</Table.HeaderCell>
-                <Table.HeaderCell>Day</Table.HeaderCell>
-                <Table.HeaderCell>Time</Table.HeaderCell>
-                <Table.HeaderCell>Tutor</Table.HeaderCell>
-                <Table.HeaderCell>Style</Table.HeaderCell>
-                <Table.HeaderCell>Edit</Table.HeaderCell>
-                <Table.HeaderCell>Delete</Table.HeaderCell>
-              </Table.Row>
-            </Table.Header>
-            <Table.Body>{this.props.stuffs.map((stuff) => <StuffItem key={stuff._id} stuff={stuff} />)}
-            </Table.Body>
-          </Table>
-        </Container>
+          <Container style={menuStyle}>
+            <Header as="h2" textAlign="center">List of Sessions</Header>
+            <Table celled>
+              <Table.Header>
+                <Table.Row>
+                  <Table.HeaderCell>Tutee</Table.HeaderCell>
+                  <Table.HeaderCell>Course Name</Table.HeaderCell>
+                  <Table.HeaderCell>Month</Table.HeaderCell>
+                  <Table.HeaderCell>Day</Table.HeaderCell>
+                  <Table.HeaderCell>Time</Table.HeaderCell>
+                  <Table.HeaderCell>Tutor</Table.HeaderCell>
+                  <Table.HeaderCell>Style</Table.HeaderCell>
+                  <Table.HeaderCell>Edit</Table.HeaderCell>
+                  <Table.HeaderCell>Delete</Table.HeaderCell>
+                </Table.Row>
+              </Table.Header>
+              <Table.Body>{this.props.stuffs.map((stuff) => <StuffItem key={stuff._id} stuff={stuff}/>)}
+              </Table.Body>
+            </Table>
+          </Container>
         </div>
     );
   }

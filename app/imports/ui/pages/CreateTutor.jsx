@@ -44,7 +44,7 @@ class CreateTutor extends React.Component {
   render() {
     const menuStyle = { paddingTop: '50px' };
     return (
-        <div>
+        <div className='background1'>
           <NavBar/>
         <Grid container centered style={menuStyle}>
           <Grid.Column>
