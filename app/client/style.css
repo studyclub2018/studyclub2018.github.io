@@ -4,6 +4,11 @@
   height: 650px;
 }
 
+.background1 {
+  background: url('/images/beach.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 530px;
+}
 .footer-background {
   background-color: black;
   color: white;

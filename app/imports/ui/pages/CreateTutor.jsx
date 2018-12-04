@@ -42,6 +42,7 @@ class CreateTutor extends React.Component {
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   render() {
     return (
+        <div className='background1'>
         <Grid container centered>
           <Grid.Column>
             <Header as="h2" textAlign="center">Create a tutoring session</Header>
@@ -69,6 +70,7 @@ class CreateTutor extends React.Component {
             </AutoForm>
           </Grid.Column>
         </Grid>
+        </div>
     );
   }
 }

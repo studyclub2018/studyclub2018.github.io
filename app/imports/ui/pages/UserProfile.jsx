@@ -17,6 +17,7 @@ const courseoptions = [
 class UserProfile extends React.Component {
   render() {
     return (
+        <div className='background1'>
         <Container>
           <Grid columns={2} centered celled='internally'>
             <Grid.Row>
@@ -83,12 +84,13 @@ class UserProfile extends React.Component {
                 />
 
                 <br></br>
-                <Button floated={'right'}>Submit</Button>
+                <Button primary floated={'right'}>Submit</Button>
 
               </Grid.Column>
             </Grid.Row>
           </Grid>
         </Container>
+        </div>
     );
   }
 }

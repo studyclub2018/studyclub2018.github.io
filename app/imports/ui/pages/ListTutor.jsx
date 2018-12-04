@@ -17,6 +17,7 @@ class ListTutor extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
+        <div className='background1'>
         <Container>
           <Header as="h2" textAlign="center">List of Sessions</Header>
           <Table celled>
@@ -37,6 +38,7 @@ class ListTutor extends React.Component {
             </Table.Body>
           </Table>
         </Container>
+        </div>
     );
   }
 }
