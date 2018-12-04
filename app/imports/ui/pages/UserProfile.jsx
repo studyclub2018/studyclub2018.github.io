@@ -1,10 +1,10 @@
 import React from 'react';
 import { Users, UserSchema } from '/imports/api/stuff/user';
-import { Card, Image, Container, Button, Form, Grid, Dropdown, Input } from 'semantic-ui-react';
-import NavBar from '../components/NavBar';
+import { Card, Image, Button, Form, Grid, Dropdown, Input } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import { Bert } from 'meteor/themeteorchef:bert';
 import { Meteor } from 'meteor/meteor';
+import NavBar from '../components/NavBar';
 
 const hobbiesoptions = [
   { key: 'hobby option 1', text: 'Civil Engineering', value: 'hobby option 1' },
