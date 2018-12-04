@@ -4,7 +4,6 @@ import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { withRouter, NavLink } from 'react-router-dom';
 import { Roles } from 'meteor/alanning:roles';
-import { Menu, Dropdown, Image } from 'semantic-ui-react';
 import { Menu, Dropdown, Image, Visibility, Segment, Container, fixed } from 'semantic-ui-react';
 
 
