@@ -87,7 +87,7 @@ class Landing extends React.Component {
           </Grid>
 
           <Container>
-            <Segment style={{ padding: '20em 0em' }} vertical>
+            <Segment style={{ padding: '20em 0em 10em' }} vertical>
               <Grid container stackable verticalAlign='middle'>
                 <Grid.Row>
                   <Grid.Column width={8}>
@@ -127,7 +127,7 @@ class Landing extends React.Component {
                     </Header>
                     <p style={{ fontSize: '1.33em' }}>That is what they all say about us</p>
                   </Grid.Column>
-                  <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
+                  <Grid.Column style={{ paddingBottom: '3em', paddingTop: '3em' }}>
                     <Header as='h3' style={{ fontSize: '2em' }}>
                       "It has never been late to join the study club."
                     </Header>
@@ -160,7 +160,7 @@ class Landing extends React.Component {
                     as='h4'
                     className='header'
                     horizontal
-                    style={{ margin: '3em 0em', textTransform: 'uppercase' }}
+                    style={{ margin: '5em 0em', textTransform: 'uppercase' }}
                 >
                   <a href='#'>More</a>
                 </Divider>
