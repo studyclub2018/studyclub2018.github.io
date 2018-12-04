@@ -11,7 +11,7 @@
 }
 
 .background1 {
-  background: url('/images/beach1.jpg') no-repeat center center fixed;
+  background: url('/images/beach1.jpg') no-repeat center center;
   background-size: cover;
   height: 600px;
 }
