@@ -69,9 +69,7 @@ class Landing extends React.Component {
               <Grid.Column textAlign='center' style={menuStyle1}>
                 <Icon inverted size='massive' name='student'/>
                 <Header as='h1'>
-                  <Button inverted color='black' as={NavLink} exact to="/signin">
-                    Get a Tutor
-                  </Button>
+                  <Button as={NavLink} exact to="/create">Get a Tutor</Button>
                 </Header>
                 <h2 id="left-txt">Varsity Tutors is here to help. Tutoring available 24/7!
                   In-School 1-on-1
@@ -82,9 +80,7 @@ class Landing extends React.Component {
                 <Icon inverted size='massive' name='jenkins'/>
 
                 <Header as='h1'>
-                  <Button inverted color='black' as={NavLink} exact to="/signin">
-                    Become a Tutor
-                  </Button>
+                  <Button as={NavLink} exact to="/create">Become a Tutor</Button>
                 </Header>
                 <h2 id="left-txt">A great way to make a difference and boost your resume.
                   Pick Your Schedule. Pick Your favor Student. Fun and Rewarding.
