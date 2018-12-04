@@ -1,10 +1,9 @@
 import React from 'react';
-import { Users, UserSchema } from '/imports/api/stuff/stuff';
+import { Users, UserSchema } from '/imports/api/stuff/user';
 import { Card, Image, Container, Button, Form, Grid, Dropdown, Input } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import { Bert } from 'meteor/themeteorchef:bert';
 import { Meteor } from 'meteor/meteor';
-
 
 const hobbiesoptions = [
   { key: 'hobby option 1', text: 'Civil Engineering', value: 'hobby option 1' },
@@ -49,75 +48,77 @@ class UserProfile extends React.Component {
     return (
         <Container>
           <Grid columns={2} centered celled='internally'>
-            <AutoForm ref={(ref) => { this.formRef = ref; }} schema={UserSchema} onSubmit={this.submit}>
-            <Grid.Row>
-              <Grid.Column width={5}>
-                <Card>
-                  <Image src="images/matthew.png"/>
-                  <Card.Content>
-                    <Card.Header>
-                      Username
-                    </Card.Header>
-                    <Card.Meta>
+              <Grid.Row>
+                <Grid.Column width={5}>
+                  <Card>
+                    <Image src="images/matthew.png"/>
+                    <Card.Content>
+                      <Card.Header>
+                        Username
+                      </Card.Header>
+                      <Card.Meta>
         <span className='date'>
           Joined in 2018
         </span>
-                    </Card.Meta>
-                    <Card.Description>
-                      john@foo.com
-                    </Card.Description>
-                  </Card.Content>
-                  <Card.Content extra>
-                    <a>
-                      <Button floated={'right'} size={'mini'}>
-                        Change Password
-                      </Button>
-                      <Button floated={'left'} size={'mini'}>
-                        Change Email
-                      </Button>
-                    </a>
-                  </Card.Content>
-                </Card>
-              </Grid.Column>
+                      </Card.Meta>
+                      <Card.Description>
+                        john@foo.com
+                      </Card.Description>
+                    </Card.Content>
+                    <Card.Content extra>
+                      <a>
+                        <Button floated={'right'} size={'mini'}>
+                          Change Password
+                        </Button>
+                        <Button floated={'left'} size={'mini'}>
+                          Change Email
+                        </Button>
+                      </a>
+                    </Card.Content>
+                  </Card>
+                </Grid.Column>
 
-              <Grid.Column>
-                <Form>
-                  <Form.Group widths='equal'>
-                    <Form.Input fluid label='First name' placeholder='First name'/>
-                    <Form.Input fluid label='Last name' placeholder='Last name'/>
-                  </Form.Group>
+                <Grid.Column width={6}>
+                  <AutoForm ref={(ref) => {
+                    this.formRef = ref;
+                  }} schema={UserSchema} onSubmit={this.submit}>
+                  <Form>
+                    <Form.Group widths='equal'>
+                      <Form.Input fluid label='First name' placeholder='First name'/>
+                      <Form.Input fluid label='Last name' placeholder='Last name'/>
+                    </Form.Group>
 
-                  <Form.Group widths='equal'>
-                    <Form.TextArea label='Bio' placeholder='Tell us something about you...'/>
-                  </Form.Group>
-                </Form>
+                    <Form.Group widths='equal'>
+                      <Form.TextArea label='Bio' placeholder='Tell us something about you...'/>
+                    </Form.Group>
+                  </Form>
 
 
-                <Dropdown placeholder='Interest' fluid multiple selection options={hobbiesoptions}/>
+                  <Dropdown placeholder='Interest' fluid multiple selection options={hobbiesoptions}/>
 
-                <Dropdown placeholder='Course' fluid multiple selection options={courseoptions}/>
-                <br></br>
-                <Input fluid
-                       icon='instagram'
-                       iconPosition='left'
-                       placeholder='Link your Instagram!'
-                />
-                <Input fluid
-                       icon='twitter'
-                       iconPosition='left'
-                       placeholder='Link your Twitter!'
-                />
-                <Input fluid
-                       icon='facebook square'
-                       iconPosition='left'
-                       placeholder='Link your Facebook!'
-                />
+                  <Dropdown placeholder='Course' fluid multiple selection options={courseoptions}/>
+                  <br></br>
+                  <Input fluid
+                         icon='instagram'
+                         iconPosition='left'
+                         placeholder='Link your Instagram!'
+                  />
+                  <Input fluid
+                         icon='twitter'
+                         iconPosition='left'
+                         placeholder='Link your Twitter!'
+                  />
+                  <Input fluid
+                         icon='facebook square'
+                         iconPosition='left'
+                         placeholder='Link your Facebook!'
+                  />
 
-                <br></br>
-                <Button floated={'right'}>Submit</Button>
-              </Grid.Column>
-            </Grid.Row>
-            </AutoForm>
+                  <br></br>
+                  <Button floated={'right'} onClick={this.submit}>Submit</Button>
+                  </AutoForm>
+                </Grid.Column>
+              </Grid.Row>
           </Grid>
         </Container>
     );
