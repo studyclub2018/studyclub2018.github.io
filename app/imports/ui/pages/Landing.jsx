@@ -161,36 +161,33 @@ class Landing extends React.Component {
                     are sensei in some courses and grasshoppers in other courses. Each student must also provide a
                     head
                     shot so that they can be visually identified.
-
-
-                  </p>
-                  <Button primary size='large' as={NavLink} exact to="/signin">
-                    Join Us Today!
-                  </Button>
-                  <Divider
-                      as='h4'
-                      className='header'
-                      horizontal
-                      style={{ margin: '3em 0em', textTransform: 'uppercase' }}
-                  >
-                    <a href='#'>More</a>
-                  </Divider>
-                  <Header as='h3' style={{ fontSize: '2em' }}>
-                    Did We Tell You About Our Organization?
-                  </Header>
-                  <p style={{ fontSize: '1.33em' }}>
-                    Yes I know you hardly know us. We are a non-profit organization! You can sign up an account for
-                    free.
-                    By the way, this is a good chance for you to interact with different people. Do not miss us!
-                  </p>
-                  <Button primary size='large' as={NavLink} exact to="/signin">
-                    Still Quite Interested
-                  </Button>
-                </Container>
-              </Segment>
-            </Container>
-            <Footer/>
-          </div>
+                </p>
+                <Button primary size='large' as={NavLink} exact to="/signin">
+                  Join Us Today!
+                </Button>
+                <Divider
+                    as='h4'
+                    className='header'
+                    horizontal
+                    style={{ margin: '5em 0em', textTransform: 'uppercase' }}
+                >
+                  <a href='#'>More</a>
+                </Divider>
+                <Header as='h3' style={{ fontSize: '2em' }}>
+                  Did We Tell You About Our Organization?
+                </Header>
+                <p style={{ fontSize: '1.33em' }}>
+                  Yes I know you hardly know us. We are a non-profit organization! You can sign up an account for free.
+                  By the way, this is a good chance for you to interact with different people. Don't miss us!
+                </p>
+                <Button primary size='large' as={NavLink} exact to="/signin">
+                  I'm Still Quite Interested
+                </Button>
+              </Container>
+            </Segment>
+          </Container>
+          <Footer/>
+        </div>
         </div>
     );
   }

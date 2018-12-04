@@ -46,10 +46,11 @@ export default class Signin extends React.Component {
       return <Redirect to={from}/>;
     }
     // Otherwise return the Login form.
+    const menuStyle = { paddingTop: '50px' };
     return (
         <div className='background1'>
           <NavBar/>
-        <Container>
+        <Container style={menuStyle}>
           <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
             <Grid.Column>
               <Header as="h2" textAlign="center">
