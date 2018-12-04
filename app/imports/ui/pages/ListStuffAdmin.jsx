@@ -1,10 +1,11 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Table, Header, Loader } from 'semantic-ui-react';
+import { Table, Header, Loader, Grid } from 'semantic-ui-react';
 import { Stuffs } from '/imports/api/stuff/stuff';
 import StuffItemAdmin from '/imports/ui/components/StuffItemAdmin';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import AdminNavBar from '../components/NavBar';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class ListStuffAdmin extends React.Component {
@@ -16,9 +17,12 @@ class ListStuffAdmin extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
+    const menuStyle = { paddingTop: '50px' };
     return (
-        <Container>
-          <Header as="h2" textAlign="center">Admin Page</Header>
+        <div>
+          <AdminNavBar/>
+          <Grid container centered style={menuStyle}>
+          <Header as="h2" textAlign="center">List current study sessions</Header>
           <Table celled>
             <Table.Header>
               <Table.Row>
@@ -38,7 +42,8 @@ class ListStuffAdmin extends React.Component {
               {this.props.stuffs.map((stuff) => <StuffItemAdmin key={stuff._id} stuff={stuff} />)}
             </Table.Body>
           </Table>
-        </Container>
+          </Grid>
+</div>
     );
   }
 }

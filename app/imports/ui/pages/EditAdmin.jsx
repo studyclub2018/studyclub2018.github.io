@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Loader, Header, Segment, Form } from 'semantic-ui-react';
+import { Grid, Loader, Header, Segment, Form, Container } from 'semantic-ui-react';
 import { Stuffs, StuffSchema } from '/imports/api/stuff/stuff';
 import { Bert } from 'meteor/themeteorchef:bert';
 import AutoForm from 'uniforms-semantic/AutoForm';
@@ -11,6 +11,7 @@ import ErrorsField from 'uniforms-semantic/ErrorsField';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import AdminNavBar from '../components/AdminNavBar';
 
 /** Renders the Page for editing a single document. */
 class EditAdmin extends React.Component {
@@ -30,8 +31,12 @@ class EditAdmin extends React.Component {
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   renderPage() {
+    const menuStyle = { paddingTop: '50px' };
     return (
-        <Grid container centered>
+        <div>
+          <AdminNavBar/>
+          <Container style={menuStyle}>
+        <Grid container centered style={menuStyle}>
           <Grid.Column>
             <Header as="h2" textAlign="center">Manage tutoring sessions</Header>
             <AutoForm schema={StuffSchema} onSubmit={this.submit} model={this.props.doc}>
@@ -58,6 +63,8 @@ class EditAdmin extends React.Component {
             </AutoForm>
           </Grid.Column>
         </Grid>
+          </Container>
+        </div>
     );
   }
 }
