@@ -23,7 +23,7 @@ class Landing extends React.Component {
     const menuStyle2 = { marginTop: 120, paddingRight: 60 };
     const isAdmin = Roles.userIsInRole(Meteor.userId(), 'admin');
     if (isAdmin) {
-      return(
+      return (
       <div>
         <AdminNavBar/>
         <div className='background'>
@@ -162,7 +162,7 @@ class Landing extends React.Component {
                     horizontal
                     style={{ margin: '3em 0em', textTransform: 'uppercase' }}
                 >
-                  <a href='#'>Case Studies</a>
+                  <a href='#'>More</a>
                 </Divider>
                 <Header as='h3' style={{ fontSize: '2em' }}>
                   Did We Tell You About Our Organization?
