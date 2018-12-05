@@ -12,16 +12,16 @@ class Footer extends React.Component {
                 <Grid divided inverted stackable>
                   <Grid.Row>
                     <Grid.Column width={3}>
-                      <Header inverted as='h4' content=' NAVIGATION'/>
+                      <Header inverted as='h4' content=' CONTACT US'/>
                       <List link inverted>
-                        <List.Item as='a'>Contact Us</List.Item>
-                        <List.Item as='a'>About Us</List.Item>
+                        <List.Item as='a'>jiayingf@hawaii.edu</List.Item>
+                        <List.Item as='a'>University Of Hawaii at Manoa</List.Item>
                       </List>
                     </Grid.Column>
                     <Grid.Column width={3}>
                       <Header inverted as='h4' content='DESCRIPTION'/>
                       <List link inverted>
-                        <List.Item as='a'>How To Access</List.Item>
+                        <List.Item > <a href="https://studyclub2018.github.io/">How to access</a></List.Item>
                         <List.Item as='a'>Available Course</List.Item>
                       </List>
                     </Grid.Column>
@@ -32,7 +32,7 @@ class Footer extends React.Component {
                       <List link inverted>
                         <List.Item><a href="http://courses.ics.hawaii.edu/ics314f18/morea/final-project/
                   experience-final-project-m1.html">
-                          Final Project: Milestone 1</a>
+                          Final Project</a>
                         </List.Item>
                         <List.Item>
                           <a href="https://studyclub2018.github.io/">View on Github</a>
