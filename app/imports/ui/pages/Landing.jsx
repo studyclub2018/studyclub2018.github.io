@@ -69,7 +69,7 @@ class Landing extends React.Component {
               <Grid.Column textAlign='center' style={menuStyle1}>
                 <Icon inverted size='massive' name='student'/>
                 <Header as='h1'>
-                  <Button as={NavLink} exact to="/create">Get a Tutor</Button>
+                  <Button as={NavLink} exact to="/create" inverted>Get a Tutor</Button>
                 </Header>
                 <h2 id="left-txt">Varsity Tutors is here to help. Tutoring available 24/7!
                   In-School 1-on-1
@@ -80,7 +80,7 @@ class Landing extends React.Component {
                 <Icon inverted size='massive' name='jenkins'/>
 
                 <Header as='h1'>
-                  <Button as={NavLink} exact to="/create">Become a Tutor</Button>
+                  <Button as={NavLink} exact to="/userprofile" inverted>Become a Tutor</Button>
                 </Header>
                 <h2 id="left-txt">A great way to make a difference and boost your resume.
                   Pick Your Schedule. Pick Your favor Student. Fun and Rewarding.
@@ -174,10 +174,10 @@ class Landing extends React.Component {
                 </Header>
                 <p style={{ fontSize: '1.33em' }}>
                   Yes I know you hardly know us. We are a non-profit organization! You can sign up an account for free.
-                  By the way, this is a good chance for you to interact with different people. Don't miss us!
+                  By the way, this is a good chance for you to interact with different people. Do not miss us!
                 </p>
                 <Button primary size='large' as={NavLink} exact to="/signin">
-                  I'm Still Quite Interested
+                  Still Quite Interested
                 </Button>
               </Container>
             </Segment>

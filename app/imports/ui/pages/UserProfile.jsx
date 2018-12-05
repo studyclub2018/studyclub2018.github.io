@@ -8,6 +8,7 @@ import ErrorsField from 'uniforms-semantic/ErrorsField';
 import SubmitField from 'uniforms-semantic/SubmitField';
 import { Bert } from 'meteor/themeteorchef:bert';
 import { Meteor } from 'meteor/meteor';
+import PropTypes from 'prop-types';
 import NavBar from '../components/NavBar';
 
 /** A simple static component to render some text for the landing page. */
@@ -69,7 +70,7 @@ class UserProfile extends React.Component {
         </span>
                         </Card.Meta>
                         <Card.Description>
-                          john@foo.com
+                          text= {this.props.currentUser}
                         </Card.Description>
                       </Card.Content>
                       <Card.Content extra>
@@ -100,9 +101,9 @@ class UserProfile extends React.Component {
                       </Form>
                       <Form>
                         <Form.Group widths='equal'>
-                      <SelectField label='Interest' name='interest'/>
+                          <SelectField label='Interest' name='interest'/>
 
-                      <SelectField label='Course' name='course'/>
+                          <SelectField label='Course' name='course'/>
                         </Form.Group>
                       </Form>
                       <br></br>
@@ -134,5 +135,8 @@ class UserProfile extends React.Component {
     );
   }
 }
+UserProfile.propTypes = {
+  currentUser: PropTypes.string,
+};
 
 export default UserProfile;
