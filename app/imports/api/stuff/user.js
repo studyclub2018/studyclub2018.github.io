@@ -10,9 +10,17 @@ const UserSchema = new SimpleSchema({
   firstName: String,
   lastName: String,
   bio: String,
-  gender: String,
-  email: String,
-  owner: String,
+  interest: {
+    type: String,
+    allowedValues: ['-Select Interest-', 'Civil Engineering', 'Game Design', 'Data Base'],
+  },
+  course: {
+    type: String,
+    allowedValues: ['-Select Course-', 'ICS 111', 'ICS 211', 'ICS 311'],
+  },
+  instagram: { type: String, optional: true },
+  facebook: { type: String, optional: true },
+  twitter: { type: String, optional: true },
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */

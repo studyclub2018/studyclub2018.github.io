@@ -15,8 +15,8 @@
   ],
 
   "defaultUser": [
-    {"firstName": "Angela", "lastName": "Brown", "gender": "Female", "bio": "I am a ICS student", "email": "angelac@hawaii.edu" },
-    {"firstName": "Amanda", "lastName": "Wang", "gender": "Female", "bio": "I am a ICS student", "email": "amandaw@hawaii.edu" },
-    {"firstName": "Jackson", "lastName": "Adam", "gender": "Male", "bio": "I am a ICS student", "email": "jacksona@hawaii.edu" }
+    {"firstName": "Angela", "lastName": "Brown", "bio": "I am an ICS student", "interest": "Data Base", "course": "ICS 111" },
+    {"firstName": "Amanda", "lastName": "Wang", "bio": "I am an ICS student", "interest": "Game Design", "course": "ICS 211" },
+    {"firstName": "Jackson", "lastName": "Adam", "bio": "I am an ICS student", "interest": "Data Base", "course": "ICS 311" }
   ]
 }
