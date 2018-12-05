@@ -1,5 +1,6 @@
 import React from 'react';
 import { Users, UserSchema } from '/imports/api/stuff/user';
+import { withTracker } from 'meteor/react-meteor-data';
 import { Card, Image, Button, Form, Grid } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
@@ -8,6 +9,8 @@ import ErrorsField from 'uniforms-semantic/ErrorsField';
 import SubmitField from 'uniforms-semantic/SubmitField';
 import { Bert } from 'meteor/themeteorchef:bert';
 import { Meteor } from 'meteor/meteor';
+import PropTypes from 'prop-types';
+import { withRouter } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 
 /** A simple static component to render some text for the landing page. */
@@ -44,7 +47,8 @@ class UserProfile extends React.Component {
       twitter,
       interest,
       course,
-      owner }, this.insertCallback);
+      owner
+    }, this.insertCallback);
   }
 
   render() {
@@ -68,9 +72,10 @@ class UserProfile extends React.Component {
           Joined in 2018
         </span>
                         </Card.Meta>
-                        <Card.Description>
-                          john@foo.com
-                        </Card.Description>
+                        <Card.Header>
+                              <Card.Description text={this.props.currentUser} icon={'user'}>
+                              </Card.Description>
+                        </Card.Header>
                       </Card.Content>
                       <Card.Content extra>
                         <a>
@@ -100,9 +105,9 @@ class UserProfile extends React.Component {
                       </Form>
                       <Form>
                         <Form.Group widths='equal'>
-                      <SelectField label='Interest' name='interest'/>
+                          <SelectField label='Interest' name='interest'/>
 
-                      <SelectField label='Course' name='course'/>
+                          <SelectField label='Course' name='course'/>
                         </Form.Group>
                       </Form>
                       <br></br>
@@ -135,4 +140,12 @@ class UserProfile extends React.Component {
   }
 }
 
-export default UserProfile;
+UserProfile.propTypes = {
+  currentUser: PropTypes.string,
+};
+
+const UserProfileContainer = withTracker(() => ({
+  currentUser: Meteor.user() ? Meteor.user().username : '',
+}))(UserProfile);
+
+export default withRouter(UserProfileContainer);
