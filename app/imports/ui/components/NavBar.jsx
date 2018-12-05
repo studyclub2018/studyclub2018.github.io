@@ -70,6 +70,8 @@ class NavBar extends React.Component {
                   </Menu.Item>
                   <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>List tutoring
                     sessions</Menu.Item>
+                 <Menu.MenuItem as={NavLink} activeClassName="active" exact to="/" key='rate'>Rate a tutor
+                 </Menu.MenuItem>
                 </Container>
               </Menu>
             </Segment>
