@@ -210,5 +210,9 @@ The rate tutor page allows users to rate their tutors. Users go to the rate tuto
 **Study Club Team Members**
 
 **Jiaying Feng**
+
+
 **Christoper Lau**
+
+
 **QiQing Luo**
