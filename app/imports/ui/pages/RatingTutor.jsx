@@ -48,7 +48,7 @@ class RatingTutor extends React.Component {
           <div className='background1'>
             <Grid container centered style={menuStyle}>
               <Grid.Column>
-                <Header as="h2" textAlign="center">Give a comment to your tutor</Header>
+                <Header as="h2" textAlign="center">Give a Comment to your Tutor</Header>
                 <AutoForm ref={(ref) => {
                   this.formRef = ref;
                 }} schema={RateSchema} onSubmit={this.submit}>
