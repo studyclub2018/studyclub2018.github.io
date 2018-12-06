@@ -15,8 +15,8 @@
   ],
 
   "defaultUser": [
-    {"firstName": "Angela", "lastName": "Brown", "bio": "I am an ICS student", "interest": "Data Base", "course": "ICS 111" },
-    {"firstName": "Amanda", "lastName": "Wang", "bio": "I am an ICS student", "interest": "Game Design", "course": "ICS 211" },
-    {"firstName": "Jackson", "lastName": "Adam", "bio": "I am an ICS student", "interest": "Data Base", "course": "ICS 311" }
+    {"firstName": "Angela", "lastName": "Brown", "bio": "I am an ICS student", "interest": "Data Base", "course": "ICS 111", "position": "Tutee" },
+    {"firstName": "Amanda", "lastName": "Wang", "bio": "I am Amanda Wang and I will be your tutor! I am 20 years old and a graduate of ICS department. I have a degree in Bachelor of Science in ICS.", "interest": "Game Design, Data Base", "course": "ICS 211, ICS 311", "position": "Tutor" },
+    {"firstName": "Jackson", "lastName": "Adam", "bio": "I am an ICS student", "interest": "Data Base", "course": "ICS 311", "position": "Tutee" }
   ]
 }

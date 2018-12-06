@@ -10,6 +10,10 @@ const UserSchema = new SimpleSchema({
   firstName: String,
   lastName: String,
   bio: String,
+  position: {
+    type: String,
+    allowedValues: ['-Select Position-', 'Tutee', 'Tutor'],
+  },
   interest: {
     type: String,
     allowedValues: ['-Select Interest-', 'Civil Engineering', 'Game Design', 'Data Base'],

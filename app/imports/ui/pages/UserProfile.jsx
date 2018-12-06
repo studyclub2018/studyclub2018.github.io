@@ -33,7 +33,7 @@ class UserProfile extends React.Component {
 
   /** On submit, insert the data. */
   submit(data) {
-    const { firstName, lastName, bio, instagram, facebook, interest, course } = data;
+    const { firstName, lastName, bio, instagram, facebook, interest, course, position } = data;
     console.log(data, firstName, lastName);
     const owner = Meteor.user().username;
     Users.insert({
@@ -43,8 +43,9 @@ class UserProfile extends React.Component {
       instagram,
       facebook,
       interest,
-      course,
-      owner }, this.insertCallback);
+      course, position,
+      owner
+    }, this.insertCallback);
   }
 
   render() {
@@ -92,14 +93,17 @@ class UserProfile extends React.Component {
                           <TextField fluid label='Last name' placeholder='Last name' name='lastName'/>
                         </Form.Group>
                         <Form.Group widths='equal'>
+                          <SelectField label='Position' name='position'/>
+                        </Form.Group>
+                        <Form.Group widths='equal'>
                           <LongTextField label='Bio' placeholder='Tell us something about you...' name='bio'/>
                         </Form.Group>
                       </Form>
                       <Form>
                         <Form.Group widths='equal'>
-                      <SelectField label='Interest' name='interest'/>
+                          <SelectField label='Interest' name='interest'/>
 
-                      <SelectField label='Course' name='course'/>
+                          <SelectField label='Course' name='course'/>
                         </Form.Group>
                       </Form>
                       <br></br>
