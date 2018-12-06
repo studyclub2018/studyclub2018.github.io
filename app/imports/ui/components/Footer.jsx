@@ -14,8 +14,8 @@ class Footer extends React.Component {
                     <Grid.Column width={3}>
                       <Header inverted as='h4' content=' CONTACT US'/>
                       <List link inverted>
-                        <List.Item as='a'>jiayingf@hawaii.edu</List.Item>
-                        <List.Item as='a'>University Of Hawaii at Manoa</List.Item>
+                        <List.Item as='a' inverted>jiayingf@hawaii.edu</List.Item>
+                        <List.Item as='a' inverted>University Of Hawaii at Manoa</List.Item>
                       </List>
                     </Grid.Column>
                     <Grid.Column width={3}>
