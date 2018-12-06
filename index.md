@@ -138,13 +138,12 @@ Users could create or edit their profile through the user profile page.
 
 
 
-
-
-
 # Milestone 3:
 
 
 **Milestone 3 was implemented as <a href='https://github.com/studyclub2018/studyclub2018.github.io/projects/5'>Study Club Github Milestone 3 </a>**
+
+
 
 
 
@@ -165,8 +164,8 @@ For the milestone 3, we will continue to develop the pages that we created in M2
 
 
 
-
 <img class="ui floated image" src="../image/RateTutor.png">
+
 
 The rate tutor page allows users to rate their tutors. Users go to the rate tutor page, input tutor's name, give a rate of the tutor, select whether they want to choose this tutor again and give a comment of the tutor. 
 
@@ -176,6 +175,7 @@ The rate tutor page allows users to rate their tutors. Users go to the rate tuto
 
 
 **Community Feedback**
+
 
 `T. Feng`
 `The study club application is a useful website that helps students from ICS to study. The website is nest and clean, it is well-organized and have clear introduction of how to use it. `
