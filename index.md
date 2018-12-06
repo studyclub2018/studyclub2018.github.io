@@ -146,14 +146,14 @@ For the milestone 3, we will continue to develop the pages that we created in M2
 
 **Community Feedback**
 
-`Tingting Feng`:
+`Tingting Feng`
 `The study club application is a useful website that helps students from ICS to study. The website is nest and clean, it is well-organized and have clear introduction of how to use it. `
 
-`Qianwen Zhang`:
+`Qianwen Zhang`
 
 
 
-`Sini Lei`:
+`Sini Lei`
 
 
  
