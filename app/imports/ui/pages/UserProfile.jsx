@@ -1,5 +1,6 @@
 import React from 'react';
 import { Users, UserSchema } from '/imports/api/stuff/user';
+import { withTracker } from 'meteor/react-meteor-data';
 import { Card, Image, Button, Form, Grid } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
@@ -9,6 +10,8 @@ import ErrorsField from 'uniforms-semantic/ErrorsField';
 import SubmitField from 'uniforms-semantic/SubmitField';
 import { Bert } from 'meteor/themeteorchef:bert';
 import { Meteor } from 'meteor/meteor';
+import PropTypes from 'prop-types';
+import { withRouter } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 
 /** A simple static component to render some text for the landing page. */
@@ -16,6 +19,7 @@ class UserProfile extends React.Component {
   /** Bind 'this' so that a ref to the Form can be saved in formRef and communicated between render() and submit(). */
   constructor(props) {
     super(props);
+    console.log(props);
     this.submit = this.submit.bind(this);
     this.insertCallback = this.insertCallback.bind(this);
     this.formRef = null;
@@ -62,13 +66,10 @@ class UserProfile extends React.Component {
                       <Image src="images/matthew.png"/>
                       <Card.Content>
                         <Card.Header>
-                          Username
+                          {this.props.currentUser}
                         </Card.Header>
                         <Card.Meta><span className='date'>Joined in 2018</span>
                         </Card.Meta>
-                        <Card.Description>
-                          john@foo.com
-                        </Card.Description>
                       </Card.Content>
                       <Card.Content extra>
                         <a>
@@ -131,4 +132,12 @@ class UserProfile extends React.Component {
   }
 }
 
-export default UserProfile;
+UserProfile.propTypes = {
+  currentUser: PropTypes.string,
+};
+
+const UserProfileContainer = withTracker(() => ({
+  currentUser: Meteor.user() ? Meteor.user().username : '',
+}))(UserProfile);
+
+export default withRouter(UserProfileContainer);
