@@ -84,9 +84,14 @@ _The picture below shows the pages that we created in M1._
 <img class="ui floated image" src="../image/M1.png">
 
 
+
+
 # Milestone 2:
 
+
+
 <img class="ui floated image" src="../image/M2.png">
+
 
 
 For the milestone 2, we will continue to develop the pages that we created in M1 and Significantly improve the functionality and quality of our application beyond M1. Significantly improve your software engineering process beyond M1. We will change the design of our app and edit the github page. Besides the pages that we developed in M1, we might create a calendar page and a game mechanic page, otherwise, we will continue to develop those two pages in M3.
@@ -138,6 +143,7 @@ Users could create or edit their profile through the user profile page.
 
 
 **Milestone 3 was implemented as <a href='https://github.com/studyclub2018/studyclub2018.github.io/projects/5'>Study Club Github Milestone 3 </a>**
+
 
 
 <img class="ui floated image" src="../image/M3.png">
