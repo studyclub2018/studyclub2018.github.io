@@ -139,6 +139,8 @@ Users could create or edit their profile through the user profile page.
 
 
 
+
+
 # Milestone 3:
 
 
@@ -156,12 +158,20 @@ For the milestone 3, we will continue to develop the pages that we created in M2
 
 
 
+
+
 **Rate my tutor page**
+
+
+
 
 
 <img class="ui floated image" src="../image/RateTutor.png">
 
 The rate tutor page allows users to rate their tutors. Users go to the rate tutor page, input tutor's name, give a rate of the tutor, select whether they want to choose this tutor again and give a comment of the tutor. 
+
+
+
 
 
 
