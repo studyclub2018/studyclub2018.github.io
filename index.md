@@ -131,12 +131,17 @@ Users could create or edit their profile through the user profile page.
 
 **Milestone 3 was implemented as <a href='https://github.com/studyclub2018/studyclub2018.github.io/projects/5'>Study Club Github Milestone 3 </a>**
 
+
 For the milestone 3, we will continue to develop the pages that we created in M2 and Significantly improve the functionality and quality of our application beyond M2. We will develop a calendar page and a rate my tutor page. We will also invite five UH community members to try out our system and ask them to provide feedbacks. 
+
+
 
 **Calendar page** 
 
 
+
 **Rate my tutor page**
+
 
 
 **Community Feedback**
