@@ -48,9 +48,10 @@ export default class Signin extends React.Component {
     // Otherwise return the Login form.
     const menuStyle = { paddingTop: '50px' };
     return (
-        <div className='background1'>
+        <div>
           <NavBar/>
-        <Container style={menuStyle}>
+        <div className='background1'>
+        <Grid Container style={menuStyle}>
           <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
             <Grid.Column>
               <Header as="h2" textAlign="center">
@@ -93,7 +94,8 @@ export default class Signin extends React.Component {
               )}
             </Grid.Column>
           </Grid>
-        </Container>
+        </Grid>
+        </div>
         </div>
     );
   }
