@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Form, Grid, Header, Message, Segment } from 'semantic-ui-react';
 import { Accounts } from 'meteor/accounts-base';
+import NavBar from '../components/NavBar';
 
 /**
  * Signup component is similar to signin component, but we attempt to create a new user instead.
@@ -36,9 +37,12 @@ export default class Signup extends React.Component {
 
   /** Display the signup form. */
   render() {
+    const menuStyle = { paddingTop: '50px' };
     return (
-        <div className='background1'>
-        <Container>
+        <div>
+          <NavBar/>
+          <div className='background1'>
+        <Grid Container style={menuStyle}>
           <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
             <Grid.Column>
               <Header as="h2" textAlign="center">
@@ -81,7 +85,8 @@ export default class Signup extends React.Component {
               )}
             </Grid.Column>
           </Grid>
-        </Container>
+        </Grid>
+        </div>
         </div>
     );
   }
