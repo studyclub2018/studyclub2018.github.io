@@ -19,6 +19,7 @@ class UserProfile extends React.Component {
   /** Bind 'this' so that a ref to the Form can be saved in formRef and communicated between render() and submit(). */
   constructor(props) {
     super(props);
+    console.log(props);
     this.submit = this.submit.bind(this);
     this.insertCallback = this.insertCallback.bind(this);
     this.formRef = null;
@@ -64,17 +65,13 @@ class UserProfile extends React.Component {
                       <Image src="images/matthew.png"/>
                       <Card.Content>
                         <Card.Header>
-                          Username
+                          {this.props.currentUser}
                         </Card.Header>
                         <Card.Meta>
         <span className='date'>
           Joined in 2018
         </span>
                         </Card.Meta>
-                        <Card.Header>
-                              <Card.Description text={this.props.currentUser} icon={'user'}>
-                              </Card.Description>
-                        </Card.Header>
                       </Card.Content>
                       <Card.Content extra>
                         <a>
