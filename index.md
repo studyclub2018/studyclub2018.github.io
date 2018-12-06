@@ -92,6 +92,7 @@ _The picture below shows the pages that we created in M1._
 
 <img class="ui floated image" src="../image/M2.png">
 
+The milestone 2 was started on November 15, 2018 and ended on November 27, 2018.
 
 
 For the milestone 2, we will continue to develop the pages that we created in M1 and Significantly improve the functionality and quality of our application beyond M1. Significantly improve your software engineering process beyond M1. We will change the design of our app and edit the github page. Besides the pages that we developed in M1, we might create a calendar page and a game mechanic page, otherwise, we will continue to develop those two pages in M3.
@@ -150,6 +151,9 @@ Users could create or edit their profile through the user profile page.
 <img class="ui floated image" src="../image/M3.png">
 
 
+Milestone 3 was started on November 27, 2018 and ended on December 6, 2018.
+
+
 
 For the milestone 3, we will continue to develop the pages that we created in M2 and Significantly improve the functionality and quality of our application beyond M2. We will develop a rate my tutor page and improve the details of the application. We will also invite five UH community members to try out our system and ask them to provide feedbacks. 
 
@@ -202,3 +206,9 @@ The rate tutor page allows users to rate their tutors. Users go to the rate tuto
 `The website is good but I could not see user profile data and you should add more content for a tutor website.`
  
 
+
+**Study Club Team Members**
+
+**Jiaying Feng**
+**Christoper Lau**
+**QiQing Luo**
