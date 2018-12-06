@@ -16,7 +16,6 @@ class AdminNavBar extends React.Component {
           </Menu.Item>
           <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>
             List of study sessions</Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>List Users</Menu.Item>
           <Menu.Item position="right">
             {this.props.currentUser === '' ? (
                 <Dropdown text="Login" pointing="top right" icon={'user'}>
