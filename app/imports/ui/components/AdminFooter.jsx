@@ -4,12 +4,12 @@ import { Container, Grid, Header, List, Segment } from 'semantic-ui-react';
 /** The Footer appears at the bottom of every page. Rendered by the App Layout component. */
 class Footer extends React.Component {
   render() {
-    const menuStyle = { fontSize: 17 };
-    const menuStyle1 = { fontSize: 22, paddingBottom: 10 };
+    const menuStyle = { fontSize: 15 };
+    const menuStyle1 = { fontSize: 20, paddingBottom: 5 };
     return (
         <footer>
           <div className="footer-background">
-            <Segment inverted vertical style={{ padding: '5em 0em' }}>
+            <Segment inverted vertical style={{ padding: '2em 0em', marginTop: 20, marginBottom: 10 }}>
               <Container>
                 <Grid divided inverted stackable>
                   <Grid.Row>
@@ -18,9 +18,9 @@ class Footer extends React.Component {
                       <List link inverted>
                         <List.Item style={menuStyle} as='a'>Contact Us</List.Item>
                         <List.List>
-                        <List.Item as='li' icon='mail'>jiayingf@hawaii.edu</List.Item>
-                        <List.Item as='li' icon='mail'>qiqingl@hawaii.edu</List.Item>
-                        <List.Item as='li' icon='mail'>cl33@hawaii.edu</List.Item>
+                          <List.Item as='li' icon='mail'>jiayingf@hawaii.edu</List.Item>
+                          <List.Item as='li' icon='mail'>qiqingl@hawaii.edu</List.Item>
+                          <List.Item as='li' icon='mail'>cl33@hawaii.edu</List.Item>
                         </List.List>
                         <List.Item style={menuStyle} as='a'>About Us</List.Item>
                       </List>

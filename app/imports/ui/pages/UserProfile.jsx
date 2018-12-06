@@ -3,6 +3,7 @@ import { Users, UserSchema } from '/imports/api/stuff/user';
 import { Card, Image, Button, Form, Grid } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
+import LongTextField from 'uniforms-semantic/LongTextField';
 import SelectField from 'uniforms-semantic/SelectField';
 import ErrorsField from 'uniforms-semantic/ErrorsField';
 import SubmitField from 'uniforms-semantic/SubmitField';
@@ -32,7 +33,7 @@ class UserProfile extends React.Component {
 
   /** On submit, insert the data. */
   submit(data) {
-    const { firstName, lastName, bio, instagram, facebook, twitter, interest, course } = data;
+    const { firstName, lastName, bio, instagram, facebook, interest, course } = data;
     console.log(data, firstName, lastName);
     const owner = Meteor.user().username;
     Users.insert({
@@ -41,7 +42,6 @@ class UserProfile extends React.Component {
       bio,
       instagram,
       facebook,
-      twitter,
       interest,
       course,
       owner }, this.insertCallback);
@@ -95,7 +95,7 @@ class UserProfile extends React.Component {
                           <TextField fluid label='Last name' placeholder='Last name' name='lastName'/>
                         </Form.Group>
                         <Form.Group widths='equal'>
-                          <TextField label='Bio' placeholder='Tell us something about you...' name='bio'/>
+                          <LongTextField label='Bio' placeholder='Tell us something about you...' name='bio'/>
                         </Form.Group>
                       </Form>
                       <Form>
@@ -111,11 +111,6 @@ class UserProfile extends React.Component {
                                  iconPosition='left'
                                  placeholder='Link your Instagram!'
                                  name='instagram'/>
-                      <TextField fluid
-                                 icon='twitter'
-                                 iconPosition='left'
-                                 placeholder='Link your Twitter!'
-                                 name='twitter'/>
                       <TextField fluid
                                  icon='facebook square'
                                  iconPosition='left'

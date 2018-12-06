@@ -65,13 +65,17 @@ class NavBar extends React.Component {
                   <Menu.Item as={NavLink} activeClassName="" exact to="/" style={menuStyle}>
                     <Menu.Item style={menuStyle}><Image size='tiny' avatar src="/images/logo.png"/></Menu.Item>
                   </Menu.Item>
-                  <Menu.Item as={NavLink} activeClassName="active" exact to="/create" key='add'>Create a tutoring
-                    session
+                  <Menu.Item as={NavLink} activeClassName="active" exact to="/create" key='add'>Tutor Session
                   </Menu.Item>
+<<<<<<< HEAD
                   <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>List tutoring
                     sessions</Menu.Item>
                  <Menu.MenuItem as={NavLink} activeClassName="active" exact to="/" key='rate'>Rate a tutor
                  </Menu.MenuItem>
+=======
+                  <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>List
+                    Tutoring </Menu.Item>
+>>>>>>> master
                 </Container>
               </Menu>
             </Segment>
