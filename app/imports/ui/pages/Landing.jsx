@@ -16,6 +16,7 @@ import PropTypes from 'prop-types';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Users } from '/imports/api/stuff/user.js';
 import Footer from '../components/Footer';
+import AdminFooter from '../components/AdminFooter';
 import NavBar from '../components/NavBar';
 
 /** A simple static component to render some text for the landing page. */
@@ -56,7 +57,7 @@ class Landing extends React.Component {
                   </h2>
                 </Grid.Column>
               </Grid>
-              <Footer/>
+              <AdminFooter/>
             </div>
           </div>
       );

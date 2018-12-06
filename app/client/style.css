@@ -19,9 +19,10 @@
 .footer-background {
   background-color: black;
   color: white;
-  margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 100px;
+  padding-bottom: 0px;
+
+
 }
 
 #left-txt {
