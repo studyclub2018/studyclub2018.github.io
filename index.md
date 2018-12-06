@@ -129,6 +129,7 @@ Users could create or edit their profile through the user profile page.
 
 # Milestone 3:
 
+
 **Milestone 3 was implemented as <a href='https://github.com/studyclub2018/studyclub2018.github.io/projects/5'>Study Club Github Milestone 3 </a>**
 
 
@@ -140,11 +141,16 @@ For the milestone 3, we will continue to develop the pages that we created in M2
 
 
 
+
+
 **Rate my tutor page**
 
 
 
+
 **Community Feedback**
+
+
 
 `Tingting Feng`
 `The study club application is a useful website that helps students from ICS to study. The website is nest and clean, it is well-organized and have clear introduction of how to use it. `
