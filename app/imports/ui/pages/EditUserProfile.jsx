@@ -9,10 +9,12 @@ import ErrorsField from 'uniforms-semantic/ErrorsField';
 import SubmitField from 'uniforms-semantic/SubmitField';
 import { Bert } from 'meteor/themeteorchef:bert';
 import { Meteor } from 'meteor/meteor';
+import PropTypes from 'prop-types';
+import { withTracker } from 'meteor/react-meteor-data';
 import NavBar from '../components/NavBar';
 
 /** A simple static component to render some text for the landing page. */
-class UserProfile extends React.Component {
+class EditUserProfile extends React.Component {
   /** Bind 'this' so that a ref to the Form can be saved in formRef and communicated between render() and submit(). */
   constructor(props) {
     super(props);
@@ -32,19 +34,24 @@ class UserProfile extends React.Component {
   }
 
   /** On submit, insert the data. */
+
   submit(data) {
-    const { firstName, lastName, bio, instagram, facebook, interest, course } = data;
-    console.log(data, firstName, lastName);
-    const owner = Meteor.user().username;
-    Users.insert({
-      firstName,
+    const { firstName,
       lastName,
       bio,
       instagram,
       facebook,
       interest,
-      course,
-      owner }, this.insertCallback);
+      course, _id } = data;
+    Users.update(_id, { $set: { firstName,
+        lastName,
+        bio,
+        instagram,
+        facebook,
+        interest,
+        course, } }, (error) => (error ?
+        Bert.alert({ type: 'danger', message: `Could not update the user profile: ${error.message}` }) :
+        Bert.alert({ type: 'success', message: 'User profile succesfully updated!' })));
   }
 
   render() {
@@ -83,35 +90,33 @@ class UserProfile extends React.Component {
                   </Grid.Column>
 
                   <Grid.Column widths='equal'>
-                    <AutoForm ref={(ref) => {
-                      this.formRef = ref;
-                    }} schema={UserSchema} onSubmit={this.submit}>
+                    <AutoForm schema={UserSchema} onSubmit={this.submit} model={this.props.doc}>
                       <Form>
                         <Form.Group widths='equal'>
-                          <TextField fluid label='First name' placeholder='First name' name='firstName'/>
-                          <TextField fluid label='Last name' placeholder='Last name' name='lastName'/>
+                          <TextField fluid label='First name' placeholder={this.props.user.firstName} name='firstName'/>
+                          <TextField fluid label='Last name' placeholder={this.props.user.lastName} name='lastName'/>
                         </Form.Group>
                         <Form.Group widths='equal'>
-                          <LongTextField label='Bio' placeholder='Tell us something about you...' name='bio'/>
+                          <LongTextField label='Bio' placeholder={this.props.user.bio} name='bio'/>
                         </Form.Group>
                       </Form>
                       <Form>
                         <Form.Group widths='equal'>
-                      <SelectField label='Interest' name='interest'/>
+                      <SelectField label={this.props.user.interest} name='interest'/>
 
-                      <SelectField label='Course' name='course'/>
+                      <SelectField label={this.props.user.course} name='course'/>
                         </Form.Group>
                       </Form>
                       <br></br>
                       <TextField fluid
                                  icon='instagram'
                                  iconPosition='left'
-                                 placeholder='Link your Instagram!'
+                                 placeholder={this.props.user.instagram}
                                  name='instagram'/>
                       <TextField fluid
                                  icon='facebook square'
                                  iconPosition='left'
-                                 placeholder='Link your Facebook!'
+                                 placeholder={this.props.user.facebook}
                                  name='facebook'/>
                       <SubmitField value='Submit'/>
                       <br></br>
@@ -127,4 +132,21 @@ class UserProfile extends React.Component {
   }
 }
 
-export default UserProfile;
+EditUserProfile.propTypes = {
+  doc: PropTypes.object,
+  model: PropTypes.object,
+  ready: PropTypes.bool.isRequired,
+  user: PropTypes.object.isRequired,
+};
+
+/** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
+export default withTracker(({ match }) => {
+  // Get the documentID from the URL field. See imports/ui/layouts/App.jsx for the route containing :_id.
+  const documentId = match.params._id;
+  // Get access to Stuff documents.
+  const subscription = Meteor.subscribe('User');
+  return {
+    doc: Users.findOne(documentId),
+    ready: subscription.ready(),
+  };
+})(EditUserProfile);

@@ -15,6 +15,7 @@ import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
 import UserProfile from '../pages/UserProfile';
+import EditUserProfile from '../pages/EditUserProfile';
 import RatingTutor from '../pages/RatingTutor';
 import ListTutor from '../pages/ListTutor';
 
@@ -31,6 +32,7 @@ class App extends React.Component {
               <Route path="/user" component={Landing}/>
               <ProtectedRoute path="/list" component={ListTutor}/>
               <ProtectedRoute path="/userprofile" component={UserProfile}/>
+              <ProtectedRoute path="/edituserprofile" component={EditUserProfile}/>
               <ProtectedRoute path="/create" component={CreateTutor}/>
               <ProtectedRoute path="/edit/:_id" component={EditTutor}/>
               <ProtectedRoute path="/editAdmin/:_id" component={EditAdmin}/>
