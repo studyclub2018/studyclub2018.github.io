@@ -47,8 +47,7 @@ class UserProfile extends React.Component {
       twitter,
       interest,
       course,
-      owner
-    }, this.insertCallback);
+      owner }, this.insertCallback);
   }
 
   render() {
