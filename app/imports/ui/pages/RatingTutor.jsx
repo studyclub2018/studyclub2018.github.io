@@ -11,7 +11,6 @@ import { Bert } from 'meteor/themeteorchef:bert';
 import { Meteor } from 'meteor/meteor';
 import NavBar from '../components/NavBar';
 
-
 /** Renders the Page for adding a document. */
 class RatingTutor extends React.Component {
 
@@ -50,11 +49,13 @@ class RatingTutor extends React.Component {
             <Grid container centered style={menuStyle}>
               <Grid.Column>
                 <Header as="h2" textAlign="center">Give a comment to your tutor</Header>
-                <AutoForm ref={(ref) => { this.formRef = ref; }} schema={RateSchema} onSubmit={this.submit}>
+                <AutoForm ref={(ref) => {
+                  this.formRef = ref;
+                }} schema={RateSchema} onSubmit={this.submit}>
                   <Segment>
                     <SelectField name='tutor'/>
-                    <TextField name='rateYourTutor'/>
-                    <SelectField name='wouldSelectThisTuor'/>
+                    <SelectField name='rateYourTutor'/>
+                    <SelectField name='wouldSelectThisTutorAgain'/>
                     <TextField name='comment'/>
                     <SubmitField value='Submit'/>
                     <ErrorsField/>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
@@ -14,7 +15,8 @@ import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
 import UserProfile from '../pages/UserProfile';
-import RatingTutor from '../ pages/RatingTutor';
+import RatingTutor from '../pages/RatingTutor';
+import ListTutor from '../pages/ListTutor';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -27,12 +29,13 @@ class App extends React.Component {
               <Route path="/signin" component={Signin}/>
               <Route path="/signup" component={Signup}/>
               <Route path="/user" component={Landing}/>
+              <ProtectedRoute path="/list" component={ListTutor}/>
               <ProtectedRoute path="/userprofile" component={UserProfile}/>
               <ProtectedRoute path="/create" component={CreateTutor}/>
               <ProtectedRoute path="/edit/:_id" component={EditTutor}/>
-              <ProtectedRoute path="/ratingtutor" component={RatingTutor}/>
               <ProtectedRoute path="/editAdmin/:_id" component={EditAdmin}/>
               <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
+              <ProtectedRoute path="/ratingtutor" component={RatingTutor}/>
               <ProtectedRoute path="/signout" component={Signout}/>
               <Route component={NotFound}/>
             </Switch>
@@ -48,16 +51,16 @@ class App extends React.Component {
  * @param {any} { component: Component, ...rest }
  */
 const ProtectedRoute = ({ component: Component, ...rest }) => (
-  <Route
-    {...rest}
-    render={(props) => {
-      const isLogged = Meteor.userId() !== null;
-      return isLogged ?
-          (<Component {...props} />) :
-          (<Redirect to={{ pathname: '/signin', state: { from: props.location } }}/>
-      );
-    }}
-  />
+    <Route
+        {...rest}
+        render={(props) => {
+          const isLogged = Meteor.userId() !== null;
+          return isLogged ?
+              (<Component {...props} />) :
+              (<Redirect to={{ pathname: '/signin', state: { from: props.location } }}/>
+              );
+        }}
+    />
 );
 
 /**

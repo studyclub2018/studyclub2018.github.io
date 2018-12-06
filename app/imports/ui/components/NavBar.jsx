@@ -6,7 +6,6 @@ import { withRouter, NavLink } from 'react-router-dom';
 import { Roles } from 'meteor/alanning:roles';
 import { Menu, Dropdown, Image, Visibility, Segment, Container, fixed } from 'semantic-ui-react';
 
-
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class NavBar extends React.Component {
   render() {
@@ -67,15 +66,11 @@ class NavBar extends React.Component {
                   </Menu.Item>
                   <Menu.Item as={NavLink} activeClassName="active" exact to="/create" key='add'>Tutor Session
                   </Menu.Item>
-<<<<<<< HEAD
-                  <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>List tutoring
-                    sessions</Menu.Item>
-                 <Menu.MenuItem as={NavLink} activeClassName="active" exact to="/" key='rate'>Rate a tutor
-                 </Menu.MenuItem>
-=======
                   <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>List
                     Tutoring </Menu.Item>
->>>>>>> master
+                  <Menu.Item as={NavLink} activeClassName="active" exact to="/ratingtutor" key='ratingtutor'>Rate a
+                    tutor
+                  </Menu.Item>
                 </Container>
               </Menu>
             </Segment>

@@ -11,7 +11,10 @@ const RateSchema = new SimpleSchema({
     type: String,
     allowedValues: ['-Select Tutor-', 'jim', 'don', 'weedle', 'nein'],
   },
-  rateYourTutor: String,
+  rateYourTutor: {
+    type: String,
+    allowedValues: ['-Select level-', '1-very poor', '2-poor', '3-average', '4-good', '5-excellent'],
+  },
   wouldSelectThisTutorAgain: {
     type: String,
     allowedValues: ['-Select-', 'Yes', 'No'],
