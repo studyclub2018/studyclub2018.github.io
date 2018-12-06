@@ -81,7 +81,7 @@ class Landing extends React.Component {
                 <Icon inverted size='massive' name='jenkins'/>
 
                 <Header as='h1'>
-                  <Button as={NavLink} exact to="/create">Become a Tutor</Button>
+                  <Button as={NavLink} exact to="/userprofile">Become a Tutor</Button>
                 </Header>
                 <h2 id="left-txt">A great way to make a difference and boost your resume.
                   Pick Your Schedule. Pick Your favor Student. Fun and Rewarding.
