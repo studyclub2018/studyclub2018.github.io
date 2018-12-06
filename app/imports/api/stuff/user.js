@@ -20,7 +20,6 @@ const UserSchema = new SimpleSchema({
   },
   instagram: { type: String, optional: true },
   facebook: { type: String, optional: true },
-  twitter: { type: String, optional: true },
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */
