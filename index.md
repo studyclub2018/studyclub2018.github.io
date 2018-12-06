@@ -142,22 +142,23 @@ For the milestone 3, we will continue to develop the pages that we created in M2
 
 
 
-
-
 **Rate my tutor page**
 
+
+<img class="ui floated image" src="../image/RateTutor.png">
 
 
 
 **Community Feedback**
+
 `Tingting Feng`
 `The study club application is a useful website that helps students from ICS to study. The website is nest and clean, it is well-organized and have clear introduction of how to use it. `
 
 `Qianwen Zhang`
-
-
+`The website is clean and simple. It provides good introduction. I think maybe you should improve the user profile so the users can view their changes.`
 
 `Sini Lei`
+`This is a really good website, it provides the opportunity for helping students with their homework. I like how you could rate your tutor.`
 
 
  
