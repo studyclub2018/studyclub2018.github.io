@@ -161,8 +161,6 @@ For the milestone 3, we will continue to develop the pages that we created in M2
 
 
 
-
-
 **Rate my tutor page**
 
 
@@ -208,6 +206,7 @@ The rate tutor page allows users to rate their tutors. Users go to the rate tuto
 
 
 **Study Club Team Members**
+
 
 **Jiaying Feng**
 
