@@ -86,6 +86,9 @@ _The picture below shows the pages that we created in M1._
 
 # Milestone 2:
 
+<img class="ui floated image" src="../image/M2.png">
+
+
 For the milestone 2, we will continue to develop the pages that we created in M1 and Significantly improve the functionality and quality of our application beyond M1. Significantly improve your software engineering process beyond M1. We will change the design of our app and edit the github page. Besides the pages that we developed in M1, we might create a calendar page and a game mechanic page, otherwise, we will continue to develop those two pages in M3.
 
 
@@ -123,6 +126,9 @@ The footer of the landing page includes the access to our github page and the in
 
 Users could create or edit their profile through the user profile page.
 
+
+
+
 **Milestone 2 was implemented as <a href='https://github.com/studyclub2018/studyclub2018.github.io/projects/4'>Study Club GitHub Milestone 2 </a>**
 
 
@@ -134,11 +140,13 @@ Users could create or edit their profile through the user profile page.
 **Milestone 3 was implemented as <a href='https://github.com/studyclub2018/studyclub2018.github.io/projects/5'>Study Club Github Milestone 3 </a>**
 
 
-For the milestone 3, we will continue to develop the pages that we created in M2 and Significantly improve the functionality and quality of our application beyond M2. We will develop a calendar page and a rate my tutor page. We will also invite five UH community members to try out our system and ask them to provide feedbacks. 
+<img class="ui floated image" src="../image/M3.png">
 
 
 
-**Calendar page** 
+For the milestone 3, we will continue to develop the pages that we created in M2 and Significantly improve the functionality and quality of our application beyond M2. We will develop a rate my tutor page and improve the details of the application. We will also invite five UH community members to try out our system and ask them to provide feedbacks. 
+
+
 
 
 
@@ -147,19 +155,34 @@ For the milestone 3, we will continue to develop the pages that we created in M2
 
 <img class="ui floated image" src="../image/RateTutor.png">
 
+The rate tutor page allows users to rate their tutors. Users go to the rate tutor page, input tutor's name, give a rate of the tutor, select whether they want to choose this tutor again and give a comment of the tutor. 
+
 
 
 **Community Feedback**
 
-`Tingting Feng`
+`T. Feng`
 `The study club application is a useful website that helps students from ICS to study. The website is nest and clean, it is well-organized and have clear introduction of how to use it. `
 
-`Qianwen Zhang`
+
+
+`Q. Zhang`
 `The website is clean and simple. It provides good introduction. I think maybe you should improve the user profile so the users can view their changes.`
 
-`Sini Lei`
+
+
+
+`S. Lei`
 `This is a really good website, it provides the opportunity for helping students with their homework. I like how you could rate your tutor.`
 
 
+
+`A. Chen`
+`The website is well-organized and clean. I like it because it helps students to learn. I think you should work on the home page as a lot of it links to the login.`
+
+
+
+`Y. He`
+`The website is good but I could not see user profile data and you should add more content for a tutor website.`
  
 
