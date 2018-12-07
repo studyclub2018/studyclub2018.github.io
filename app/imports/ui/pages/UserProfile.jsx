@@ -37,19 +37,21 @@ class UserProfile extends React.Component {
 
   /** On submit, insert the data. */
   submit(data) {
-    const { firstName, lastName, bio, instagram, facebook, interest, course, position } = data;
-    console.log(data, firstName, lastName);
-    const owner = Meteor.user().username;
-    Users.insert({
-      firstName,
-      lastName,
-      bio,
-      instagram,
-      facebook,
-      interest,
-      course, position,
-      owner
-    }, this.insertCallback);
+    const { firstName, lastName, bio, instagram, facebook, interest, course, position, _id } = data;
+    Users.update(_id, {
+      $set: {
+        firstName,
+        lastName,
+        bio,
+        instagram,
+        facebook,
+        interest,
+        course,
+        position,
+      },
+    }, (error) => (error ?
+        Bert.alert({ type: 'danger', message: `Could not update the user profile: ${error.message}` }) :
+        Bert.alert({ type: 'success', message: 'User profile succesfully updated!' })));
   }
 
   render() {
@@ -134,10 +136,22 @@ class UserProfile extends React.Component {
 
 UserProfile.propTypes = {
   currentUser: PropTypes.string,
+  doc: PropTypes.object,
+  model: PropTypes.object,
+  ready: PropTypes.bool.isRequired,
 };
 
 const UserProfileContainer = withTracker(() => ({
   currentUser: Meteor.user() ? Meteor.user().username : '',
 }))(UserProfile);
 
-export default withRouter(UserProfileContainer);
+export default withTracker(({ match }) => {
+  // Get the documentID from the URL field. See imports/ui/layouts/App.jsx for the route containing :_id.
+  const documentId = match.params._id;
+  // Get access to Users documents.
+  const subscription = Meteor.subscribe('Users');
+  return {
+    doc: Users.findOne(documentId),
+    ready: subscription.ready(),
+  };
+})(UserProfileContainer);
